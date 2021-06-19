@@ -2,20 +2,38 @@ const express = require('express')
 const _ = require('underscore')
 const products = require("./../../../database").products
 const uuidv4 = require('uuid/v4')
-
+const Joi = require('joi')
 const productsRouter = express.Router()
+
+
+const blueprintProduct = Joi.object().keys({
+    titulo : Joi.string().max(100).required(),
+    precio : Joi.number().positive().precision(2).required(),
+    moneda : Joi.string().length(3).uppercase
+})
+
+const validarProducto = (req,res,next)=>{
+    let resultado = Joi.validate(req.body,blueprintProduct,{abortEarly:false,convert: false})
+    console.log(resultado)
+
+    if(resultado.error === null){
+        next();//ve a la sgt funcion de la cadena y no es return
+    }
+    else{
+        let errorDeValidacion = resultado.error.details.reduce((acumulador,error)=>{
+            return acumulador + `[${error.message}]`
+        })
+        res.status(400).send(errorDeValidacion  )
+    }
+}
 
 productsRouter.get("/",(req,res)=> {
     res.json(products)
 })
 //localhost:3000/productos
-productsRouter.post('/', (req,res) =>{
+productsRouter.post('/', validarProducto,(req,res) =>{
     let nuevoProducto = req.body
-    if(!nuevoProducto.titulo|| !nuevoProducto.precio || !nuevoProducto.moneda){
-        //Bad request
-        res.status(404).send("Tu producto debe especificar un titulo, precio y moneda")
-        return
-    }
+
     nuevoProducto.id = uuidv4()
     products.push(nuevoProducto)
     //Created 200
@@ -33,14 +51,9 @@ productsRouter.get('/:id',(req,res)=> {
     return res.status(404).send(`Producto [${req.params.id}] no encontrado`)
     })
 
-productsRouter.put('/:id',(req,res)=>{
+productsRouter.put('/:id',validarProducto,(req,res)=>{
         let id = req.params.id
         let reemplazoParaProducto = req.body;
-        if(!reemplazoParaProducto.titulo|| !reemplazoParaProducto.precio || !reemplazoParaProducto.moneda){
-            //Bad request
-            res.status(404).send("Tu producto debe especificar un titulo, precio y moneda")
-            return
-        }
         let indice =  _.findIndex(products,product => product.id == id)
         if(indice !== -1){
             reemplazoParaProducto.id = id
