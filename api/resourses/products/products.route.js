@@ -5,7 +5,7 @@ const uuidv4 = require('uuid/v4')
 
 const productsRouter = express.Router()
 
-productsRouter.route('/').get((req,res)=> {
+productsRouter.get("/",(req,res)=> {
     res.json(products)
 })
 //localhost:3000/productos
@@ -23,9 +23,7 @@ productsRouter.post('/', (req,res) =>{
 
 })
 
-
-productsRouter.route('/:id')
-    .get((req,res)=> {
+productsRouter.get('/:id',(req,res)=> {
     for( let producto of products){
         if (producto.id == req.params.id){
             res.json(producto);
@@ -34,7 +32,8 @@ productsRouter.route('/:id')
     }
     return res.status(404).send(`Producto [${req.params.id}] no encontrado`)
     })
-    .put((req,res)=>{
+
+productsRouter.put('/:id',(req,res)=>{
         let id = req.params.id
         let reemplazoParaProducto = req.body;
         if(!reemplazoParaProducto.titulo|| !reemplazoParaProducto.precio || !reemplazoParaProducto.moneda){
@@ -52,7 +51,8 @@ productsRouter.route('/:id')
 
         }
     })
-    .delete((req,res)=>{
+
+productsRouter.delete('/:id',(req,res)=>{
         let indiceABorrar = _.findIndex(products, product => product.id = req.params.id);
         if(indiceABorrar === -1){
             res.status(404).send(`Producto [${id}] no encontrado. Nada que borrar`);
