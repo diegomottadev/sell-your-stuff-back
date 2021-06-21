@@ -2,31 +2,9 @@ const express = require('express')
 const _ = require('underscore')
 const products = require("./../../../database").products
 const uuidv4 = require('uuid/v4')
-const Joi = require('joi')
 const productsRouter = express.Router()
-
-
-const blueprintProduct = Joi.object().keys({
-    titulo : Joi.string().max(100).required(),
-    precio : Joi.number().positive().precision(2).required(),
-    moneda : Joi.string().length(3).uppercase
-})
-
-const validarProducto = (req,res,next)=>{
-    let resultado = Joi.validate(req.body,blueprintProduct,{abortEarly:false,convert: false})
-    console.log(resultado)
-
-    if(resultado.error === null){
-        next();//ve a la sgt funcion de la cadena y no es return
-    }
-    else{
-        let errorDeValidacion = resultado.error.details.reduce((acumulador,error)=>{
-            return acumulador + `[${error.message}]`
-        })
-        res.status(400).send(errorDeValidacion  )
-    }
-}
-
+const validarProducto = require('./products.validate')
+const log = require("../utils/logger")
 productsRouter.get("/",(req,res)=> {
     res.json(products)
 })
@@ -48,6 +26,7 @@ productsRouter.get('/:id',(req,res)=> {
             return;
         }
     }
+    log.warn(`Producto [${req.params.id}] no encontrado`)
     return res.status(404).send(`Producto [${req.params.id}] no encontrado`)
     })
 
@@ -58,19 +37,24 @@ productsRouter.put('/:id',validarProducto,(req,res)=>{
         if(indice !== -1){
             reemplazoParaProducto.id = id
             products[indice] = reemplazoParaProducto;
+            log.info(`Producto con id [${id}] remplazado con nuevo producto`, reemplazoParaProducto)
+
             res.status(200).json(reemplazoParaProducto);
         }else{
+            log.error(`Producto [${req.params.id}] no encontrado`)
             res.status(404).send(`Producto [${id}] no encontrado`);
 
         }
     })
 
 productsRouter.delete('/:id',(req,res)=>{
-        let indiceABorrar = _.findIndex(products, product => product.id = req.params.id);
+        let indiceABorrar = _.findIndex(products, product => product.id === req.params.id);
+        console.log(indiceABorrar)
         if(indiceABorrar === -1){
-            res.status(404).send(`Producto [${id}] no encontrado. Nada que borrar`);
+            log.error(`Producto [${req.params.id}] no encontrado. Nada que borrar`)
+            res.status(404).send(`Producto [${req.params.id}] no encontrado. Nada que borrar`)
+            return
         }
-
         let borrado = products.splice(indiceABorrar,1);
         res.json(borrado);
 
