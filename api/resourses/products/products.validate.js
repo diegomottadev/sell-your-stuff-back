@@ -9,8 +9,6 @@ const blueprintProduct = Joi.object({
 
 module.exports = (req,res,next)=>{
     let resultado = blueprintProduct.validate(req.body,{abortEarly:false,convert: false})
-    console.log(resultado)
-
     if(resultado.error === undefined){
         next();//ve a la sgt funcion de la cadena y no es return
     }
