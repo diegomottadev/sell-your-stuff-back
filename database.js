@@ -4,6 +4,9 @@ const products = [
     {id:'1234',titulo:'taza de cafe ',precio:1300, moneda: 'USD'}
 ]
 
+const usuarios = [];
+
 module.exports ={
-    products
+    products,
+    usuarios
 }
