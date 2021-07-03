@@ -1,6 +1,7 @@
 const Joi = require('@hapi/joi')
 
 const log = require('./../utils/logger')
+
 const blueprintProduct = Joi.object({
     titulo : Joi.string().max(100).required(),
     precio : Joi.number().positive().precision(2).required(),

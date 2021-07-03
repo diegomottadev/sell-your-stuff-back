@@ -4,7 +4,7 @@ const products = require("./../../../database").products
 const uuidv4 = require('uuid/v4')
 const productsRouter = express.Router()
 const validarProducto = require('./products.validate')
-const log = require("../utils/logger")
+const log = require('./../utils/logger')
 productsRouter.get("/",(req,res)=> {
     res.json(products)
 })
