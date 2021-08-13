@@ -4995,3 +4995,844 @@ info: 2021-08-13T12:43:55.231Z Escuchando el puerto 3000
 info: 2021-08-13T12:44:19.859Z Escuchando el puerto 3000
 info: 2021-08-13T12:44:42.180Z Escuchando el puerto 3000
 info: 2021-08-13T12:44:43.129Z Escuchando el puerto 3000
+info: 2021-08-13T12:48:31.262Z ::1 - POST /usuarios HTTP/1.1 201 27 - 135.797 ms
+warn: 2021-08-13T12:49:17.917Z Login falló. Debes especificar el username y la contraseña del usuario. Ambos deber ser string: 
+info: 2021-08-13T12:49:17.919Z ::1 - POST /usuarios/login HTTP/1.1 400 96 - 4.672 ms
+info: 2021-08-13T12:49:26.326Z Usuario ivan completo autenticacion exitosamente
+info: 2021-08-13T12:49:26.327Z ::1 - POST /usuarios/login HTTP/1.1 200 199 - 113.967 ms
+info: 2021-08-13T12:50:16.787Z ::1 - GET /productos HTTP/1.1 404 148 - 1.187 ms
+info: 2021-08-13T12:50:55.528Z ::1 - GET /productos HTTP/1.1 404 148 - 0.630 ms
+info: 2021-08-13T12:51:19.432Z ::1 - GET /productos HTTP/1.1 404 148 - 0.365 ms
+info: 2021-08-13T12:52:42.047Z ::1 - POST /productos HTTP/1.1 404 149 - 2.093 ms
+info: 2021-08-13T12:53:16.642Z ::1 - POST /productos HTTP/1.1 404 149 - 0.514 ms
+info: 2021-08-13T12:53:51.573Z ::1 - POST /productos HTTP/1.1 - - - - ms
+info: 2021-08-13T12:54:26.633Z ::1 - GET /productos HTTP/1.1 - - - - ms
+info: 2021-08-13T12:55:00.951Z ::1 - GET /products HTTP/1.1 200 194 - 0.532 ms
+info: 2021-08-13T12:55:13.044Z Usuario ivan suministro un token valido. Autenticacion completada
+warn: 2021-08-13T12:55:13.046Z El siguiente producto no paso la validacion: 
+info: 2021-08-13T12:55:13.048Z ::1 - POST /products HTTP/1.1 400 37 - 3.910 ms
+info: 2021-08-13T12:55:42.131Z Usuario ivan suministro un token valido. Autenticacion completada
+warn: 2021-08-13T12:55:42.132Z El siguiente producto no paso la validacion: 
+info: 2021-08-13T12:55:42.133Z ::1 - POST /products HTTP/1.1 400 37 - 1.976 ms
+info: 2021-08-13T12:56:16.493Z Usuario ivan suministro un token valido. Autenticacion completada
+warn: 2021-08-13T12:56:16.493Z El siguiente producto no paso la validacion: 
+info: 2021-08-13T12:56:16.494Z ::1 - POST /products HTTP/1.1 400 37 - 1.212 ms
+info: 2021-08-13T12:56:30.736Z Usuario ivan suministro un token valido. Autenticacion completada
+warn: 2021-08-13T12:56:30.737Z El siguiente producto no paso la validacion: 
+info: 2021-08-13T12:56:30.739Z ::1 - POST /products HTTP/1.1 400 37 - 1.525 ms
+info: 2021-08-13T12:56:33.093Z Usuario ivan suministro un token valido. Autenticacion completada
+warn: 2021-08-13T12:56:33.094Z El siguiente producto no paso la validacion: 
+info: 2021-08-13T12:56:33.095Z ::1 - POST /products HTTP/1.1 400 37 - 1.725 ms
+info: 2021-08-13T12:57:18.731Z Usuario ivan suministro un token valido. Autenticacion completada
+warn: 2021-08-13T12:57:18.731Z El siguiente producto no paso la validacion: 
+info: 2021-08-13T12:57:18.732Z ::1 - POST /products HTTP/1.1 400 37 - 1.075 ms
+info: 2021-08-13T12:57:20.920Z Usuario ivan suministro un token valido. Autenticacion completada
+warn: 2021-08-13T12:57:20.921Z El siguiente producto no paso la validacion: 
+info: 2021-08-13T12:57:20.922Z ::1 - POST /products HTTP/1.1 400 37 - 1.157 ms
+info: 2021-08-13T12:57:21.193Z Usuario ivan suministro un token valido. Autenticacion completada
+warn: 2021-08-13T12:57:21.193Z El siguiente producto no paso la validacion: 
+info: 2021-08-13T12:57:21.194Z ::1 - POST /products HTTP/1.1 400 37 - 0.975 ms
+info: 2021-08-13T12:57:21.753Z Usuario ivan suministro un token valido. Autenticacion completada
+warn: 2021-08-13T12:57:21.753Z El siguiente producto no paso la validacion: 
+info: 2021-08-13T12:57:21.754Z ::1 - POST /products HTTP/1.1 400 37 - 1.242 ms
+info: 2021-08-13T12:57:22.028Z Usuario ivan suministro un token valido. Autenticacion completada
+warn: 2021-08-13T12:57:22.028Z El siguiente producto no paso la validacion: 
+info: 2021-08-13T12:57:22.029Z ::1 - POST /products HTTP/1.1 400 37 - 1.131 ms
+info: 2021-08-13T12:57:41.664Z Escuchando el puerto 3000
+info: 2021-08-13T12:57:44.464Z Escuchando el puerto 3000
+info: 2021-08-13T12:57:45.036Z JWT token no es valido. Usuario con el id 43c1d7e1-2f17-4ae5-8612-ff023e4179de no existe
+info: 2021-08-13T12:57:45.047Z ::1 - POST /products HTTP/1.1 401 - - 13.854 ms
+info: 2021-08-13T12:58:12.614Z JWT token no es valido. Usuario con el id 43c1d7e1-2f17-4ae5-8612-ff023e4179de no existe
+info: 2021-08-13T12:58:12.616Z ::1 - POST /products HTTP/1.1 401 - - 1.969 ms
+info: 2021-08-13T12:58:23.919Z Escuchando el puerto 3000
+info: 2021-08-13T12:58:35.657Z Escuchando el puerto 3000
+info: 2021-08-13T12:58:37.251Z JWT token no es valido. Usuario con el id 43c1d7e1-2f17-4ae5-8612-ff023e4179de no existe
+info: 2021-08-13T12:58:37.258Z ::1 - POST /products HTTP/1.1 401 - - 6.388 ms
+info: 2021-08-13T12:58:39.230Z JWT token no es valido. Usuario con el id 43c1d7e1-2f17-4ae5-8612-ff023e4179de no existe
+info: 2021-08-13T12:58:39.232Z ::1 - POST /products HTTP/1.1 401 - - 0.929 ms
+info: 2021-08-13T12:58:44.818Z Usuario ivan no existe. No puedo ser autenticado
+info: 2021-08-13T12:58:44.824Z ::1 - POST /usuarios/login HTTP/1.1 400 46 - 26.697 ms
+info: 2021-08-13T12:58:51.861Z Usuario ivan no existe. No puedo ser autenticado
+info: 2021-08-13T12:58:51.863Z ::1 - POST /usuarios/login HTTP/1.1 400 46 - 1.733 ms
+info: 2021-08-13T12:59:04.360Z Usuario ivan no existe. No puedo ser autenticado
+info: 2021-08-13T12:59:04.361Z ::1 - POST /usuarios/login HTTP/1.1 400 46 - 1.029 ms
+info: 2021-08-13T12:59:04.928Z Usuario ivan no existe. No puedo ser autenticado
+info: 2021-08-13T12:59:04.929Z ::1 - POST /usuarios/login HTTP/1.1 400 46 - 1.013 ms
+info: 2021-08-13T12:59:06.135Z Usuario ivan no existe. No puedo ser autenticado
+info: 2021-08-13T12:59:06.136Z ::1 - POST /usuarios/login HTTP/1.1 400 46 - 1.196 ms
+info: 2021-08-13T12:59:29.066Z Usuario admin completo autenticacion exitosamente
+info: 2021-08-13T12:59:29.067Z ::1 - POST /usuarios/login HTTP/1.1 200 199 - 96.692 ms
+info: 2021-08-13T12:59:48.461Z Usuario admin suministro un token valido. Autenticacion completada
+warn: 2021-08-13T12:59:48.464Z El siguiente producto no paso la validacion: 
+info: 2021-08-13T12:59:48.465Z ::1 - POST /products HTTP/1.1 400 37 - 3.034 ms
+info: 2021-08-13T13:00:23.211Z Escuchando el puerto 3000
+info: 2021-08-13T13:00:26.112Z Escuchando el puerto 3000
+info: 2021-08-13T13:00:26.974Z Escuchando el puerto 3000
+info: 2021-08-13T13:00:29.177Z Usuario admin suministro un token valido. Autenticacion completada
+warn: 2021-08-13T13:00:29.180Z El siguiente producto no paso la validacion: 
+info: 2021-08-13T13:00:29.189Z ::1 - POST /products HTTP/1.1 400 37 - 9.526 ms
+info: 2021-08-13T13:00:45.456Z Escuchando el puerto 3000
+info: 2021-08-13T13:00:46.361Z Escuchando el puerto 3000
+info: 2021-08-13T13:00:51.310Z Usuario admin suministro un token valido. Autenticacion completada
+warn: 2021-08-13T13:00:51.315Z El siguiente producto no paso la validacion: 
+info: 2021-08-13T13:00:51.324Z ::1 - POST /products HTTP/1.1 400 120 - 10.616 ms
+info: 2021-08-13T13:01:12.221Z Escuchando el puerto 3000
+info: 2021-08-13T13:01:14.831Z Escuchando el puerto 3000
+info: 2021-08-13T13:01:16.142Z Usuario admin suministro un token valido. Autenticacion completada
+warn: 2021-08-13T13:01:16.148Z El siguiente producto no paso la validacion: 
+info: 2021-08-13T13:01:16.157Z ::1 - POST /products HTTP/1.1 400 37 - 14.766 ms
+info: 2021-08-13T13:01:54.668Z Escuchando el puerto 3000
+info: 2021-08-13T13:02:00.033Z Escuchando el puerto 3000
+info: 2021-08-13T13:02:02.352Z Usuario admin suministro un token valido. Autenticacion completada
+info: 2021-08-13T13:02:02.386Z ::1 - POST /products HTTP/1.1 - - - - ms
+info: 2021-08-13T13:02:11.383Z Escuchando el puerto 3000
+info: 2021-08-13T13:02:14.247Z Usuario admin suministro un token valido. Autenticacion completada
+warn: 2021-08-13T13:02:14.250Z El siguiente producto no paso la validacion: 
+info: 2021-08-13T13:02:14.259Z ::1 - POST /products HTTP/1.1 400 37 - 10.111 ms
+info: 2021-08-13T13:03:28.268Z Escuchando el puerto 3000
+info: 2021-08-13T13:03:31.660Z Escuchando el puerto 3000
+info: 2021-08-13T13:03:33.822Z Escuchando el puerto 3000
+info: 2021-08-13T13:03:39.425Z Usuario admin suministro un token valido. Autenticacion completada
+warn: 2021-08-13T13:03:39.429Z El siguiente producto no paso la validacion: [object Object] - [object Object]["precio" is required]
+info: 2021-08-13T13:03:39.438Z ::1 - POST /products HTTP/1.1 400 37 - 11.969 ms
+info: 2021-08-13T13:04:03.386Z Usuario admin suministro un token valido. Autenticacion completada
+warn: 2021-08-13T13:04:03.387Z El siguiente producto no paso la validacion: [object Object] - [object Object]["precio" is required]
+info: 2021-08-13T13:04:03.388Z ::1 - POST /products HTTP/1.1 400 37 - 2.094 ms
+info: 2021-08-13T13:04:33.193Z Escuchando el puerto 3000
+info: 2021-08-13T13:04:33.811Z Escuchando el puerto 3000
+info: 2021-08-13T13:04:45.283Z Escuchando el puerto 3000
+warn: 2021-08-13T13:04:47.453Z El siguiente producto no paso la validacion: [object Object] - [object Object]["precio" is required]
+info: 2021-08-13T13:04:47.513Z ::1 - POST /products HTTP/1.1 400 37 - 14.284 ms
+warn: 2021-08-13T13:04:53.514Z El siguiente producto no paso la validacion: [object Object] - [object Object]["precio" is required]
+info: 2021-08-13T13:04:53.515Z ::1 - POST /products HTTP/1.1 400 37 - 1.356 ms
+info: 2021-08-13T13:07:48.424Z Escuchando el puerto 3000
+info: 2021-08-13T13:07:56.746Z Escuchando el puerto 3000
+info: 2021-08-13T13:07:57.596Z Escuchando el puerto 3000
+warn: 2021-08-13T13:08:02.053Z El siguiente producto no pasó la validación: 
+info: 2021-08-13T13:08:02.062Z ::1 - POST /products HTTP/1.1 400 154 - 7.416 ms
+warn: 2021-08-13T13:09:06.584Z El siguiente producto no pasó la validación: 
+info: 2021-08-13T13:09:06.587Z ::1 - POST /products HTTP/1.1 400 154 - 1.488 ms
+info: 2021-08-13T13:10:05.291Z Escuchando el puerto 3000
+info: 2021-08-13T13:10:08.467Z Escuchando el puerto 3000
+info: 2021-08-13T13:10:15.019Z Escuchando el puerto 3000
+info: 2021-08-13T13:10:16.136Z Escuchando el puerto 3000
+info: 2021-08-13T13:10:21.822Z ::1 - POST /products HTTP/1.1 - - - - ms
+info: 2021-08-13T13:10:26.643Z ::1 - POST /products HTTP/1.1 - - - - ms
+info: 2021-08-13T13:10:27.398Z ::1 - POST /products HTTP/1.1 - - - - ms
+info: 2021-08-13T13:10:33.387Z ::1 - POST /products HTTP/1.1 - - - - ms
+info: 2021-08-13T13:10:34.550Z ::1 - POST /products HTTP/1.1 - - - - ms
+warn: 2021-08-13T13:10:52.303Z El siguiente producto no pasó la validación: 
+info: 2021-08-13T13:10:52.307Z ::1 - POST /productos HTTP/1.1 400 154 - 5.791 ms
+info: 2021-08-13T13:11:32.243Z Escuchando el puerto 3000
+info: 2021-08-13T13:11:33.238Z Escuchando el puerto 3000
+info: 2021-08-13T13:11:34.841Z Escuchando el puerto 3000
+warn: 2021-08-13T13:11:39.719Z El siguiente producto no pasó la validación: 
+info: 2021-08-13T13:11:39.743Z ::1 - POST /productos HTTP/1.1 400 154 - 22.933 ms
+info: 2021-08-13T13:16:49.102Z Escuchando el puerto 3000
+info: 2021-08-13T13:16:52.015Z Escuchando el puerto 3000
+warn: 2021-08-13T13:16:57.977Z El siguiente producto no pasó la validación: 
+info: 2021-08-13T13:16:57.984Z ::1 - POST /productos HTTP/1.1 400 154 - 14.940 ms
+info: 2021-08-13T13:17:44.654Z Escuchando el puerto 3000
+warn: 2021-08-13T13:18:18.092Z El siguiente producto no pasó la validación: 
+info: 2021-08-13T13:18:18.104Z ::1 - POST /productos HTTP/1.1 400 154 - 9.817 ms
+info: 2021-08-13T13:19:05.312Z Escuchando el puerto 3000
+warn: 2021-08-13T13:56:27.254Z El siguiente producto no pasó la validación: 
+info: 2021-08-13T13:56:27.270Z ::1 - POST /productos HTTP/1.1 400 154 - 9.952 ms
+info: 2021-08-13T13:56:50.896Z Escuchando el puerto 3000
+warn: 2021-08-13T13:58:11.556Z El siguiente producto no pasó la validación: 
+info: 2021-08-13T13:58:11.565Z ::1 - POST /productos HTTP/1.1 400 154 - 9.020 ms
+warn: 2021-08-13T13:58:53.142Z El siguiente producto no pasó la validación: 
+info: 2021-08-13T13:58:53.144Z ::1 - POST /productos HTTP/1.1 400 154 - 1.268 ms
+warn: 2021-08-13T13:58:59.916Z El siguiente producto no pasó la validación: 
+info: 2021-08-13T13:58:59.919Z ::1 - POST /productos HTTP/1.1 400 154 - 1.857 ms
+warn: 2021-08-13T13:59:00.753Z El siguiente producto no pasó la validación: 
+info: 2021-08-13T13:59:00.755Z ::1 - POST /productos HTTP/1.1 400 154 - 0.760 ms
+warn: 2021-08-13T13:59:01.515Z El siguiente producto no pasó la validación: 
+info: 2021-08-13T13:59:01.516Z ::1 - POST /productos HTTP/1.1 400 154 - 1.058 ms
+info: 2021-08-13T13:59:14.149Z Usuario admin completo autenticacion exitosamente
+info: 2021-08-13T13:59:14.150Z ::1 - POST /usuarios/login HTTP/1.1 200 199 - 114.507 ms
+warn: 2021-08-13T13:59:31.995Z Los datos del usuario  no paso la validacion:  {"username":"administrador","password":"admin#·"}
+info: 2021-08-13T13:59:31.997Z ::1 - POST /usuarios HTTP/1.1 400 27 - 4.120 ms
+info: 2021-08-13T14:15:19.608Z ::1 - POST /usuarios HTTP/1.1 201 27 - 87.563 ms
+warn: 2021-08-13T14:18:30.492Z El siguiente producto no pasó la validación: 
+info: 2021-08-13T14:18:30.493Z ::1 - POST /productos/ HTTP/1.1 400 154 - 0.690 ms
+info: 2021-08-13T14:18:37.506Z Escuchando el puerto 3000
+info: 2021-08-13T14:18:49.098Z Escuchando el puerto 3000
+info: 2021-08-13T14:18:52.036Z ::1 - POST /productos/ HTTP/1.1 - - - - ms
+info: 2021-08-13T14:19:10.601Z Escuchando el puerto 3000
+info: 2021-08-13T14:19:19.223Z Escuchando el puerto 3000
+info: 2021-08-13T14:19:24.116Z ::1 - POST /productos/ HTTP/1.1 - - - - ms
+info: 2021-08-13T14:19:24.715Z ::1 - POST /productos/ HTTP/1.1 - - - - ms
+info: 2021-08-13T14:19:53.157Z Escuchando el puerto 3000
+info: 2021-08-13T14:19:57.112Z Productos agregado a la colección de productos
+info: 2021-08-13T14:19:57.122Z ::1 - POST /productos/ HTTP/1.1 201 45 - 3.538 ms
+info: 2021-08-13T14:20:12.855Z ::1 - GET /productos/ HTTP/1.1 - - - - ms
+info: 2021-08-13T14:20:22.279Z Escuchando el puerto 3000
+info: 2021-08-13T14:20:26.097Z ::1 - GET /productos/ HTTP/1.1 200 194 - 2.919 ms
+info: 2021-08-13T14:20:31.208Z ::1 - GET /productos/ HTTP/1.1 200 194 - 0.447 ms
+info: 2021-08-13T14:20:44.574Z Productos agregado a la colección de productos
+info: 2021-08-13T14:20:44.575Z ::1 - POST /productos/ HTTP/1.1 201 45 - 1.050 ms
+info: 2021-08-13T14:20:46.788Z Productos agregado a la colección de productos
+info: 2021-08-13T14:20:46.789Z ::1 - POST /productos/ HTTP/1.1 201 45 - 0.704 ms
+info: 2021-08-13T14:21:02.192Z Escuchando el puerto 3000
+info: 2021-08-13T14:21:05.390Z Escuchando el puerto 3000
+info: 2021-08-13T14:21:06.472Z Escuchando el puerto 3000
+info: 2021-08-13T14:21:07.767Z Escuchando el puerto 3000
+info: 2021-08-13T14:21:08.851Z Escuchando el puerto 3000
+info: 2021-08-13T14:21:11.920Z Escuchando el puerto 3000
+info: 2021-08-13T14:21:18.516Z Productos agregado a la colección de productos
+info: 2021-08-13T14:21:18.527Z ::1 - POST /productos/ HTTP/1.1 201 45 - 8.332 ms
+info: 2021-08-13T14:35:38.603Z Escuchando el puerto 3000
+error: 2021-08-13T14:36:11.255Z uncaughtException: Route.put() requires a callback function but got a [object Object]
+Error: Route.put() requires a callback function but got a [object Object]
+    at Route.<computed> [as put] (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as put] (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/node_modules/express/lib/router/index.js:510:19)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:43:16)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js:3:24) {"error":{},"stack":"Error: Route.put() requires a callback function but got a [object Object]\n    at Route.<computed> [as put] (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/node_modules/express/lib/router/route.js:202:15)\n    at Function.proto.<computed> [as put] (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/node_modules/express/lib/router/index.js:510:19)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:43:16)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js:3:24)","exception":true,"date":"Fri Aug 13 2021 11:36:11 GMT-0300 (Argentina Standard Time)","process":{"pid":6344,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":41508864,"heapTotal":17772544,"heapUsed":12706200,"external":1701008,"arrayBuffers":313564}},"os":{"loadavg":[2.28662109375,1.67041015625,1.65576171875],"uptime":8857},"trace":[{"column":15,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/node_modules/express/lib/router/route.js","function":"Route.<computed> [as put]","line":202,"method":"<computed> [as put]","native":false},{"column":19,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/node_modules/express/lib/router/index.js","function":"Function.proto.<computed> [as put]","line":510,"method":"<computed> [as put]","native":false},{"column":16,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":43,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":24,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js","function":null,"line":3,"method":null,"native":false}]}
+error: 2021-08-13T14:36:17.717Z uncaughtException: Route.put() requires a callback function but got a [object Object]
+Error: Route.put() requires a callback function but got a [object Object]
+    at Route.<computed> [as put] (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as put] (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/node_modules/express/lib/router/index.js:510:19)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:43:16)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js:3:24) {"error":{},"stack":"Error: Route.put() requires a callback function but got a [object Object]\n    at Route.<computed> [as put] (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/node_modules/express/lib/router/route.js:202:15)\n    at Function.proto.<computed> [as put] (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/node_modules/express/lib/router/index.js:510:19)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:43:16)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js:3:24)","exception":true,"date":"Fri Aug 13 2021 11:36:17 GMT-0300 (Argentina Standard Time)","process":{"pid":6352,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":43012096,"heapTotal":17772544,"heapUsed":12700208,"external":1701008,"arrayBuffers":313564}},"os":{"loadavg":[2.26318359375,1.67578125,1.65771484375],"uptime":8863},"trace":[{"column":15,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/node_modules/express/lib/router/route.js","function":"Route.<computed> [as put]","line":202,"method":"<computed> [as put]","native":false},{"column":19,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/node_modules/express/lib/router/index.js","function":"Function.proto.<computed> [as put]","line":510,"method":"<computed> [as put]","native":false},{"column":16,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":43,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":24,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js","function":null,"line":3,"method":null,"native":false}]}
+error: 2021-08-13T14:36:20.540Z uncaughtException: Route.put() requires a callback function but got a [object Object]
+Error: Route.put() requires a callback function but got a [object Object]
+    at Route.<computed> [as put] (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as put] (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/node_modules/express/lib/router/index.js:510:19)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:43:16)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js:3:24) {"error":{},"stack":"Error: Route.put() requires a callback function but got a [object Object]\n    at Route.<computed> [as put] (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/node_modules/express/lib/router/route.js:202:15)\n    at Function.proto.<computed> [as put] (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/node_modules/express/lib/router/index.js:510:19)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:43:16)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js:3:24)","exception":true,"date":"Fri Aug 13 2021 11:36:20 GMT-0300 (Argentina Standard Time)","process":{"pid":6362,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":42123264,"heapTotal":17772544,"heapUsed":12602512,"external":1692816,"arrayBuffers":305372}},"os":{"loadavg":[2.48193359375,1.73095703125,1.67724609375],"uptime":8866},"trace":[{"column":15,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/node_modules/express/lib/router/route.js","function":"Route.<computed> [as put]","line":202,"method":"<computed> [as put]","native":false},{"column":19,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/node_modules/express/lib/router/index.js","function":"Function.proto.<computed> [as put]","line":510,"method":"<computed> [as put]","native":false},{"column":16,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":43,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":24,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js","function":null,"line":3,"method":null,"native":false}]}
+error: 2021-08-13T14:36:22.735Z uncaughtException: mod is not defined
+ReferenceError: mod is not defined
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:25:1)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10) {"error":{},"stack":"ReferenceError: mod is not defined\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:25:1)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)","exception":true,"date":"Fri Aug 13 2021 11:36:22 GMT-0300 (Argentina Standard Time)","process":{"pid":6366,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":41525248,"heapTotal":17772544,"heapUsed":12231240,"external":1649329,"arrayBuffers":261885}},"os":{"loadavg":[2.48193359375,1.73095703125,1.67724609375],"uptime":8868},"trace":[{"column":1,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js","function":null,"line":25,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":25,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":6,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false}]}
+info: 2021-08-13T14:36:28.013Z Escuchando el puerto 3000
+error: 2021-08-13T14:36:29.796Z uncaughtException: va is not defined
+ReferenceError: va is not defined
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:26:5)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10) {"error":{},"stack":"ReferenceError: va is not defined\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:26:5)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)","exception":true,"date":"Fri Aug 13 2021 11:36:29 GMT-0300 (Argentina Standard Time)","process":{"pid":6384,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":42303488,"heapTotal":17772544,"heapUsed":12180000,"external":1649329,"arrayBuffers":261885}},"os":{"loadavg":[2.85546875,1.837890625,1.71533203125],"uptime":8875},"trace":[{"column":5,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js","function":null,"line":26,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":25,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":6,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false}]}
+info: 2021-08-13T14:36:30.406Z Escuchando el puerto 3000
+error: 2021-08-13T14:36:57.051Z uncaughtException: Route.put() requires a callback function but got a [object Object]
+Error: Route.put() requires a callback function but got a [object Object]
+    at Route.<computed> [as put] (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as put] (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/node_modules/express/lib/router/index.js:510:19)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:43:16)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js:3:24) {"error":{},"stack":"Error: Route.put() requires a callback function but got a [object Object]\n    at Route.<computed> [as put] (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/node_modules/express/lib/router/route.js:202:15)\n    at Function.proto.<computed> [as put] (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/node_modules/express/lib/router/index.js:510:19)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:43:16)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js:3:24)","exception":true,"date":"Fri Aug 13 2021 11:36:57 GMT-0300 (Argentina Standard Time)","process":{"pid":6416,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":41861120,"heapTotal":17772544,"heapUsed":12618768,"external":1692816,"arrayBuffers":305372}},"os":{"loadavg":[2.70263671875,1.89501953125,1.73974609375],"uptime":8903},"trace":[{"column":15,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/node_modules/express/lib/router/route.js","function":"Route.<computed> [as put]","line":202,"method":"<computed> [as put]","native":false},{"column":19,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/node_modules/express/lib/router/index.js","function":"Function.proto.<computed> [as put]","line":510,"method":"<computed> [as put]","native":false},{"column":16,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":43,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":24,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js","function":null,"line":3,"method":null,"native":false}]}
+error: 2021-08-13T14:36:57.921Z uncaughtException: Route.put() requires a callback function but got a [object Object]
+Error: Route.put() requires a callback function but got a [object Object]
+    at Route.<computed> [as put] (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as put] (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/node_modules/express/lib/router/index.js:510:19)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:43:16)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js:3:24) {"error":{},"stack":"Error: Route.put() requires a callback function but got a [object Object]\n    at Route.<computed> [as put] (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/node_modules/express/lib/router/route.js:202:15)\n    at Function.proto.<computed> [as put] (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/node_modules/express/lib/router/index.js:510:19)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:43:16)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js:3:24)","exception":true,"date":"Fri Aug 13 2021 11:36:57 GMT-0300 (Argentina Standard Time)","process":{"pid":6425,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":40886272,"heapTotal":17772544,"heapUsed":12712712,"external":1692816,"arrayBuffers":305372}},"os":{"loadavg":[2.70263671875,1.89501953125,1.73974609375],"uptime":8903},"trace":[{"column":15,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/node_modules/express/lib/router/route.js","function":"Route.<computed> [as put]","line":202,"method":"<computed> [as put]","native":false},{"column":19,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/node_modules/express/lib/router/index.js","function":"Function.proto.<computed> [as put]","line":510,"method":"<computed> [as put]","native":false},{"column":16,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":43,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":24,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js","function":null,"line":3,"method":null,"native":false}]}
+error: 2021-08-13T14:37:14.798Z uncaughtException: usuariosRouter is not defined
+ReferenceError: usuariosRouter is not defined
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:19:1)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js:3:24)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10) {"error":{},"stack":"ReferenceError: usuariosRouter is not defined\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:19:1)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js:3:24)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)","exception":true,"date":"Fri Aug 13 2021 11:37:14 GMT-0300 (Argentina Standard Time)","process":{"pid":6445,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":41418752,"heapTotal":18034688,"heapUsed":12693264,"external":1701008,"arrayBuffers":313564}},"os":{"loadavg":[4.591796875,2.3720703125,1.91357421875],"uptime":8920},"trace":[{"column":1,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":19,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":24,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js","function":null,"line":3,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false}]}
+error: 2021-08-13T14:37:19.512Z uncaughtException: validarUsuario is not defined
+ReferenceError: validarUsuario is not defined
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:19:26)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js:3:24)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10) {"error":{},"stack":"ReferenceError: validarUsuario is not defined\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:19:26)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js:3:24)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)","exception":true,"date":"Fri Aug 13 2021 11:37:19 GMT-0300 (Argentina Standard Time)","process":{"pid":6456,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":42377216,"heapTotal":17772544,"heapUsed":12721880,"external":1701008,"arrayBuffers":313564}},"os":{"loadavg":[4.591796875,2.3720703125,1.91357421875],"uptime":8925},"trace":[{"column":26,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":19,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":24,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js","function":null,"line":3,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false}]}
+error: 2021-08-13T14:37:27.448Z uncaughtException: validarUsuario is not defined
+ReferenceError: validarUsuario is not defined
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:19:26)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js:3:24)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10) {"error":{},"stack":"ReferenceError: validarUsuario is not defined\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:19:26)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js:3:24)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)","exception":true,"date":"Fri Aug 13 2021 11:37:27 GMT-0300 (Argentina Standard Time)","process":{"pid":6470,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":42090496,"heapTotal":17772544,"heapUsed":12606696,"external":1692816,"arrayBuffers":305372}},"os":{"loadavg":[4.19921875,2.35986328125,1.91455078125],"uptime":8933},"trace":[{"column":26,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":19,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":24,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js","function":null,"line":3,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false}]}
+error: 2021-08-13T14:37:43.538Z uncaughtException: validarUsuario is not defined
+ReferenceError: validarUsuario is not defined
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:19:26)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js:3:24)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10) {"error":{},"stack":"ReferenceError: validarUsuario is not defined\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:19:26)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js:3:24)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)","exception":true,"date":"Fri Aug 13 2021 11:37:43 GMT-0300 (Argentina Standard Time)","process":{"pid":6495,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":41635840,"heapTotal":17772544,"heapUsed":12796856,"external":1701008,"arrayBuffers":313564}},"os":{"loadavg":[4.19140625,2.44091796875,1.95068359375],"uptime":8949},"trace":[{"column":26,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":19,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":24,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js","function":null,"line":3,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false}]}
+info: 2021-08-13T14:37:57.128Z Escuchando el puerto 3000
+info: 2021-08-13T14:38:08.621Z Escuchando el puerto 3000
+info: 2021-08-13T14:38:15.588Z Escuchando el puerto 3000
+warn: 2021-08-13T14:38:22.883Z El siguiente producto no pasó la validación: 
+info: 2021-08-13T14:38:22.932Z ::1 - POST /productos/ HTTP/1.1 400 154 - 8.739 ms
+error: 2021-08-13T14:38:46.315Z uncaughtException: validateProducto is not defined
+ReferenceError: validateProducto is not defined
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:26:5)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10) {"error":{},"stack":"ReferenceError: validateProducto is not defined\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:26:5)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)","exception":true,"date":"Fri Aug 13 2021 11:38:46 GMT-0300 (Argentina Standard Time)","process":{"pid":6576,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":41365504,"heapTotal":17772544,"heapUsed":12241928,"external":1649329,"arrayBuffers":261885}},"os":{"loadavg":[5.40234375,3.1533203125,2.2509765625],"uptime":9012},"trace":[{"column":5,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js","function":null,"line":26,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":25,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":6,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false}]}
+error: 2021-08-13T14:38:53.037Z uncaughtException: validateProducto is not defined
+ReferenceError: validateProducto is not defined
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:26:5)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10) {"error":{},"stack":"ReferenceError: validateProducto is not defined\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:26:5)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)","exception":true,"date":"Fri Aug 13 2021 11:38:53 GMT-0300 (Argentina Standard Time)","process":{"pid":6585,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":42225664,"heapTotal":17772544,"heapUsed":12350416,"external":1657521,"arrayBuffers":270077}},"os":{"loadavg":[5.3701171875,3.18359375,2.2666015625],"uptime":9019},"trace":[{"column":5,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js","function":null,"line":26,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":25,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":6,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false}]}
+error: 2021-08-13T14:39:05.485Z uncaughtException: validateProducto is not defined
+ReferenceError: validateProducto is not defined
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:32:5)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10) {"error":{},"stack":"ReferenceError: validateProducto is not defined\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:32:5)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)","exception":true,"date":"Fri Aug 13 2021 11:39:05 GMT-0300 (Argentina Standard Time)","process":{"pid":6602,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":42106880,"heapTotal":17772544,"heapUsed":12293264,"external":1657521,"arrayBuffers":270077}},"os":{"loadavg":[4.77783203125,3.1279296875,2.2568359375],"uptime":9031},"trace":[{"column":5,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js","function":null,"line":32,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":25,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":6,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false}]}
+error: 2021-08-13T14:41:37.870Z uncaughtException: Identifier 'blueprintProducto' has already been declared
+/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:12
+const blueprintProducto = Joi.object({
+      ^
+
+SyntaxError: Identifier 'blueprintProducto' has already been declared
+    at wrapSafe (internal/modules/cjs/loader.js:984:16)
+    at Module._compile (internal/modules/cjs/loader.js:1032:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:7:25)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10) {"error":{},"stack":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:12\nconst blueprintProducto = Joi.object({\n      ^\n\nSyntaxError: Identifier 'blueprintProducto' has already been declared\n    at wrapSafe (internal/modules/cjs/loader.js:984:16)\n    at Module._compile (internal/modules/cjs/loader.js:1032:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:7:25)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)","exception":true,"date":"Fri Aug 13 2021 11:41:37 GMT-0300 (Argentina Standard Time)","process":{"pid":6855,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":37322752,"heapTotal":17248256,"heapUsed":9110696,"external":1489694,"arrayBuffers":102250}},"os":{"loadavg":[3.68798828125,3.31884765625,2.47216796875],"uptime":9183},"trace":[{"column":16,"file":"internal/modules/cjs/loader.js","function":"wrapSafe","line":984,"method":null,"native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1032,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":25,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":7,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false}]}
+error: 2021-08-13T14:41:49.714Z uncaughtException: Identifier 'blueprintProducto' has already been declared
+/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:12
+const blueprintProducto = Joi.object({
+      ^
+
+SyntaxError: Identifier 'blueprintProducto' has already been declared
+    at wrapSafe (internal/modules/cjs/loader.js:984:16)
+    at Module._compile (internal/modules/cjs/loader.js:1032:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:7:25)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10) {"error":{},"stack":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:12\nconst blueprintProducto = Joi.object({\n      ^\n\nSyntaxError: Identifier 'blueprintProducto' has already been declared\n    at wrapSafe (internal/modules/cjs/loader.js:984:16)\n    at Module._compile (internal/modules/cjs/loader.js:1032:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:7:25)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)","exception":true,"date":"Fri Aug 13 2021 11:41:49 GMT-0300 (Argentina Standard Time)","process":{"pid":6870,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":37388288,"heapTotal":16461824,"heapUsed":9064688,"external":1489694,"arrayBuffers":102250}},"os":{"loadavg":[3.52099609375,3.29248046875,2.47216796875],"uptime":9195},"trace":[{"column":16,"file":"internal/modules/cjs/loader.js","function":"wrapSafe","line":984,"method":null,"native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1032,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":25,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":7,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false}]}
+error: 2021-08-13T14:41:52.647Z uncaughtException: Identifier 'blueprintProducto' has already been declared
+/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:12
+const blueprintProducto = Joi.object({
+      ^
+
+SyntaxError: Identifier 'blueprintProducto' has already been declared
+    at wrapSafe (internal/modules/cjs/loader.js:984:16)
+    at Module._compile (internal/modules/cjs/loader.js:1032:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:7:25)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10) {"error":{},"stack":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:12\nconst blueprintProducto = Joi.object({\n      ^\n\nSyntaxError: Identifier 'blueprintProducto' has already been declared\n    at wrapSafe (internal/modules/cjs/loader.js:984:16)\n    at Module._compile (internal/modules/cjs/loader.js:1032:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:7:25)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)","exception":true,"date":"Fri Aug 13 2021 11:41:52 GMT-0300 (Argentina Standard Time)","process":{"pid":6883,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":37507072,"heapTotal":16723968,"heapUsed":9136912,"external":1489694,"arrayBuffers":102250}},"os":{"loadavg":[3.52099609375,3.29248046875,2.47216796875],"uptime":9198},"trace":[{"column":16,"file":"internal/modules/cjs/loader.js","function":"wrapSafe","line":984,"method":null,"native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1032,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":25,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":7,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false}]}
+error: 2021-08-13T14:41:54.314Z uncaughtException: Identifier 'blueprintProducto' has already been declared
+/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:12
+const blueprintProducto = Joi.object({
+      ^
+
+SyntaxError: Identifier 'blueprintProducto' has already been declared
+    at wrapSafe (internal/modules/cjs/loader.js:984:16)
+    at Module._compile (internal/modules/cjs/loader.js:1032:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10) {"error":{},"stack":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:12\nconst blueprintProducto = Joi.object({\n      ^\n\nSyntaxError: Identifier 'blueprintProducto' has already been declared\n    at wrapSafe (internal/modules/cjs/loader.js:984:16)\n    at Module._compile (internal/modules/cjs/loader.js:1032:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)","exception":true,"date":"Fri Aug 13 2021 11:41:54 GMT-0300 (Argentina Standard Time)","process":{"pid":6887,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":37154816,"heapTotal":16986112,"heapUsed":9088312,"external":1481502,"arrayBuffers":94058}},"os":{"loadavg":[3.31884765625,3.25439453125,2.46337890625],"uptime":9200},"trace":[{"column":16,"file":"internal/modules/cjs/loader.js","function":"wrapSafe","line":984,"method":null,"native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1032,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":25,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":6,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false}]}
+error: 2021-08-13T14:41:55.406Z uncaughtException: Identifier 'blueprintProducto' has already been declared
+/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:12
+const blueprintProducto = Joi.object({
+      ^
+
+SyntaxError: Identifier 'blueprintProducto' has already been declared
+    at wrapSafe (internal/modules/cjs/loader.js:984:16)
+    at Module._compile (internal/modules/cjs/loader.js:1032:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10) {"error":{},"stack":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:12\nconst blueprintProducto = Joi.object({\n      ^\n\nSyntaxError: Identifier 'blueprintProducto' has already been declared\n    at wrapSafe (internal/modules/cjs/loader.js:984:16)\n    at Module._compile (internal/modules/cjs/loader.js:1032:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)","exception":true,"date":"Fri Aug 13 2021 11:41:55 GMT-0300 (Argentina Standard Time)","process":{"pid":6891,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":36765696,"heapTotal":16723968,"heapUsed":9168528,"external":1489694,"arrayBuffers":102250}},"os":{"loadavg":[3.31884765625,3.25439453125,2.46337890625],"uptime":9201},"trace":[{"column":16,"file":"internal/modules/cjs/loader.js","function":"wrapSafe","line":984,"method":null,"native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1032,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":25,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":6,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false}]}
+error: 2021-08-13T14:41:57.853Z uncaughtException: Identifier 'blueprintProducto' has already been declared
+/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:12
+const blueprintProducto = Joi.object({
+      ^
+
+SyntaxError: Identifier 'blueprintProducto' has already been declared
+    at wrapSafe (internal/modules/cjs/loader.js:984:16)
+    at Module._compile (internal/modules/cjs/loader.js:1032:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10) {"error":{},"stack":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:12\nconst blueprintProducto = Joi.object({\n      ^\n\nSyntaxError: Identifier 'blueprintProducto' has already been declared\n    at wrapSafe (internal/modules/cjs/loader.js:984:16)\n    at Module._compile (internal/modules/cjs/loader.js:1032:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)","exception":true,"date":"Fri Aug 13 2021 11:41:57 GMT-0300 (Argentina Standard Time)","process":{"pid":6905,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":37310464,"heapTotal":16461824,"heapUsed":9073824,"external":1481502,"arrayBuffers":94058}},"os":{"loadavg":[3.373046875,3.2666015625,2.47216796875],"uptime":9203},"trace":[{"column":16,"file":"internal/modules/cjs/loader.js","function":"wrapSafe","line":984,"method":null,"native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1032,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":25,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":6,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false}]}
+error: 2021-08-13T14:42:43.199Z uncaughtException: Identifier 'blueprintProducto' has already been declared
+/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:12
+const blueprintProducto = Joi.object({
+      ^
+
+SyntaxError: Identifier 'blueprintProducto' has already been declared
+    at wrapSafe (internal/modules/cjs/loader.js:984:16)
+    at Module._compile (internal/modules/cjs/loader.js:1032:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10) {"error":{},"stack":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:12\nconst blueprintProducto = Joi.object({\n      ^\n\nSyntaxError: Identifier 'blueprintProducto' has already been declared\n    at wrapSafe (internal/modules/cjs/loader.js:984:16)\n    at Module._compile (internal/modules/cjs/loader.js:1032:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)","exception":true,"date":"Fri Aug 13 2021 11:42:43 GMT-0300 (Argentina Standard Time)","process":{"pid":6945,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":36954112,"heapTotal":17248256,"heapUsed":9189080,"external":1489694,"arrayBuffers":102250}},"os":{"loadavg":[2.26904296875,2.99560546875,2.408203125],"uptime":9249},"trace":[{"column":16,"file":"internal/modules/cjs/loader.js","function":"wrapSafe","line":984,"method":null,"native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1032,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":25,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":6,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false}]}
+error: 2021-08-13T14:42:51.432Z uncaughtException: Identifier 'blueprintProducto' has already been declared
+/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:12
+const blueprintProducto = Joi.object({
+      ^
+
+SyntaxError: Identifier 'blueprintProducto' has already been declared
+    at wrapSafe (internal/modules/cjs/loader.js:984:16)
+    at Module._compile (internal/modules/cjs/loader.js:1032:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10) {"error":{},"stack":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:12\nconst blueprintProducto = Joi.object({\n      ^\n\nSyntaxError: Identifier 'blueprintProducto' has already been declared\n    at wrapSafe (internal/modules/cjs/loader.js:984:16)\n    at Module._compile (internal/modules/cjs/loader.js:1032:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)","exception":true,"date":"Fri Aug 13 2021 11:42:51 GMT-0300 (Argentina Standard Time)","process":{"pid":6956,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":36970496,"heapTotal":16461824,"heapUsed":9072240,"external":1489694,"arrayBuffers":102250}},"os":{"loadavg":[2.38720703125,2.99560546875,2.4150390625],"uptime":9257},"trace":[{"column":16,"file":"internal/modules/cjs/loader.js","function":"wrapSafe","line":984,"method":null,"native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1032,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":25,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":6,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false}]}
+error: 2021-08-13T14:43:02.990Z uncaughtException: Identifier 'blueprintProducto' has already been declared
+/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:12
+const blueprintProducto = Joi.object({
+      ^
+
+SyntaxError: Identifier 'blueprintProducto' has already been declared
+    at wrapSafe (internal/modules/cjs/loader.js:984:16)
+    at Module._compile (internal/modules/cjs/loader.js:1032:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10) {"error":{},"stack":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:12\nconst blueprintProducto = Joi.object({\n      ^\n\nSyntaxError: Identifier 'blueprintProducto' has already been declared\n    at wrapSafe (internal/modules/cjs/loader.js:984:16)\n    at Module._compile (internal/modules/cjs/loader.js:1032:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)","exception":true,"date":"Fri Aug 13 2021 11:43:02 GMT-0300 (Argentina Standard Time)","process":{"pid":6973,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":37421056,"heapTotal":16723968,"heapUsed":9112520,"external":1489694,"arrayBuffers":102250}},"os":{"loadavg":[2.2470703125,2.94580078125,2.404296875],"uptime":9268},"trace":[{"column":16,"file":"internal/modules/cjs/loader.js","function":"wrapSafe","line":984,"method":null,"native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1032,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":25,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":6,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false}]}
+error: 2021-08-13T14:43:09.248Z uncaughtException: Identifier 'blueprintProducto' has already been declared
+/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:12
+const blueprintProducto = Joi.object({
+      ^
+
+SyntaxError: Identifier 'blueprintProducto' has already been declared
+    at wrapSafe (internal/modules/cjs/loader.js:984:16)
+    at Module._compile (internal/modules/cjs/loader.js:1032:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10) {"error":{},"stack":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:12\nconst blueprintProducto = Joi.object({\n      ^\n\nSyntaxError: Identifier 'blueprintProducto' has already been declared\n    at wrapSafe (internal/modules/cjs/loader.js:984:16)\n    at Module._compile (internal/modules/cjs/loader.js:1032:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)","exception":true,"date":"Fri Aug 13 2021 11:43:09 GMT-0300 (Argentina Standard Time)","process":{"pid":6984,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":37027840,"heapTotal":17248256,"heapUsed":9091136,"external":1450178,"arrayBuffers":62734}},"os":{"loadavg":[2.12841796875,2.8974609375,2.3935546875],"uptime":9275},"trace":[{"column":16,"file":"internal/modules/cjs/loader.js","function":"wrapSafe","line":984,"method":null,"native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1032,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":25,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":6,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false}]}
+error: 2021-08-13T14:43:11.916Z uncaughtException: Identifier 'blueprintProducto' has already been declared
+/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:12
+const blueprintProducto = Joi.object({
+      ^
+
+SyntaxError: Identifier 'blueprintProducto' has already been declared
+    at wrapSafe (internal/modules/cjs/loader.js:984:16)
+    at Module._compile (internal/modules/cjs/loader.js:1032:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10) {"error":{},"stack":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:12\nconst blueprintProducto = Joi.object({\n      ^\n\nSyntaxError: Identifier 'blueprintProducto' has already been declared\n    at wrapSafe (internal/modules/cjs/loader.js:984:16)\n    at Module._compile (internal/modules/cjs/loader.js:1032:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)","exception":true,"date":"Fri Aug 13 2021 11:43:11 GMT-0300 (Argentina Standard Time)","process":{"pid":7014,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":36909056,"heapTotal":17248256,"heapUsed":9193888,"external":1489694,"arrayBuffers":102250}},"os":{"loadavg":[2.12841796875,2.8974609375,2.3935546875],"uptime":9277},"trace":[{"column":16,"file":"internal/modules/cjs/loader.js","function":"wrapSafe","line":984,"method":null,"native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1032,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":25,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":6,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false}]}
+info: 2021-08-13T14:43:50.079Z Escuchando el puerto 3000
+info: 2021-08-13T14:43:52.451Z Escuchando el puerto 3000
+warn: 2021-08-13T14:44:00.346Z El siguiente producto no pasó la validación: 
+info: 2021-08-13T14:44:00.364Z ::1 - POST /productos/ HTTP/1.1 400 154 - 17.134 ms
+error: 2021-08-13T14:44:49.727Z uncaughtException: Unexpected token 'else'
+/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:22
+  } else else{
+         ^^^^
+
+SyntaxError: Unexpected token 'else'
+    at wrapSafe (internal/modules/cjs/loader.js:984:16)
+    at Module._compile (internal/modules/cjs/loader.js:1032:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10) {"error":{},"stack":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:22\n  } else else{\n         ^^^^\n\nSyntaxError: Unexpected token 'else'\n    at wrapSafe (internal/modules/cjs/loader.js:984:16)\n    at Module._compile (internal/modules/cjs/loader.js:1032:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)","exception":true,"date":"Fri Aug 13 2021 11:44:49 GMT-0300 (Argentina Standard Time)","process":{"pid":7114,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":37203968,"heapTotal":16723968,"heapUsed":9089384,"external":1489694,"arrayBuffers":102250}},"os":{"loadavg":[2.29443359375,2.783203125,2.40185546875],"uptime":9375},"trace":[{"column":16,"file":"internal/modules/cjs/loader.js","function":"wrapSafe","line":984,"method":null,"native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1032,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":25,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":6,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false}]}
+info: 2021-08-13T14:44:53.875Z Escuchando el puerto 3000
+info: 2021-08-13T14:44:56.524Z Escuchando el puerto 3000
+info: 2021-08-13T14:45:03.991Z Escuchando el puerto 3000
+info: 2021-08-13T14:45:22.388Z Escuchando el puerto 3000
+info: 2021-08-13T14:45:24.043Z Escuchando el puerto 3000
+info: 2021-08-13T14:45:25.578Z Escuchando el puerto 3000
+info: 2021-08-13T14:45:29.348Z Escuchando el puerto 3000
+error: 2021-08-13T14:45:34.602Z uncaughtException: missing ) after argument list
+/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:26
+    log.warn(`El siguiente producto no pasó la validación: ', req.body, errorDeValidacion)
+
+SyntaxError: missing ) after argument list
+    at wrapSafe (internal/modules/cjs/loader.js:984:16)
+    at Module._compile (internal/modules/cjs/loader.js:1032:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10) {"error":{},"stack":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:26\n    log.warn(`El siguiente producto no pasó la validación: ', req.body, errorDeValidacion)\n\nSyntaxError: missing ) after argument list\n    at wrapSafe (internal/modules/cjs/loader.js:984:16)\n    at Module._compile (internal/modules/cjs/loader.js:1032:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)","exception":true,"date":"Fri Aug 13 2021 11:45:34 GMT-0300 (Argentina Standard Time)","process":{"pid":7200,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":36970496,"heapTotal":17248256,"heapUsed":9203592,"external":1489694,"arrayBuffers":102250}},"os":{"loadavg":[2.19873046875,2.67431640625,2.3798828125],"uptime":9420},"trace":[{"column":16,"file":"internal/modules/cjs/loader.js","function":"wrapSafe","line":984,"method":null,"native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1032,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":25,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":6,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false}]}
+info: 2021-08-13T14:45:36.963Z Escuchando el puerto 3000
+info: 2021-08-13T14:45:39.519Z Escuchando el puerto 3000
+error: 2021-08-13T14:45:41.941Z uncaughtException: Missing } in template expression
+/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:26
+    log.warn(`El siguiente producto no pasó la validación: ${req.body, errorDeValidacion`)
+
+SyntaxError: Missing } in template expression
+    at wrapSafe (internal/modules/cjs/loader.js:984:16)
+    at Module._compile (internal/modules/cjs/loader.js:1032:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10) {"error":{},"stack":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:26\n    log.warn(`El siguiente producto no pasó la validación: ${req.body, errorDeValidacion`)\n\nSyntaxError: Missing } in template expression\n    at wrapSafe (internal/modules/cjs/loader.js:984:16)\n    at Module._compile (internal/modules/cjs/loader.js:1032:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)","exception":true,"date":"Fri Aug 13 2021 11:45:41 GMT-0300 (Argentina Standard Time)","process":{"pid":7219,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":37208064,"heapTotal":17248256,"heapUsed":9252008,"external":1497886,"arrayBuffers":110442}},"os":{"loadavg":[2.46875,2.71728515625,2.3984375],"uptime":9427},"trace":[{"column":16,"file":"internal/modules/cjs/loader.js","function":"wrapSafe","line":984,"method":null,"native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1032,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":25,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":6,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false}]}
+info: 2021-08-13T14:45:45.441Z Escuchando el puerto 3000
+info: 2021-08-13T14:45:47.785Z Escuchando el puerto 3000
+error: 2021-08-13T14:45:49.335Z uncaughtException: Unexpected token '}'
+/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:26
+    log.warn(`El siguiente producto no pasó la validación: ${req.body} - ${} errorDeValidacion`)
+                                                                           ^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (internal/modules/cjs/loader.js:984:16)
+    at Module._compile (internal/modules/cjs/loader.js:1032:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10) {"error":{},"stack":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:26\n    log.warn(`El siguiente producto no pasó la validación: ${req.body} - ${} errorDeValidacion`)\n                                                                           ^\n\nSyntaxError: Unexpected token '}'\n    at wrapSafe (internal/modules/cjs/loader.js:984:16)\n    at Module._compile (internal/modules/cjs/loader.js:1032:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)","exception":true,"date":"Fri Aug 13 2021 11:45:49 GMT-0300 (Argentina Standard Time)","process":{"pid":7247,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":36888576,"heapTotal":16461824,"heapUsed":9114864,"external":1489694,"arrayBuffers":102250}},"os":{"loadavg":[2.91162109375,2.8046875,2.43115234375],"uptime":9435},"trace":[{"column":16,"file":"internal/modules/cjs/loader.js","function":"wrapSafe","line":984,"method":null,"native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1032,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":25,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":6,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false}]}
+error: 2021-08-13T14:45:50.335Z uncaughtException: Missing } in template expression
+/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:26
+    log.warn(`El siguiente producto no pasó la validación: ${req.body} - ${ errorDeValidacion`)
+
+SyntaxError: Missing } in template expression
+    at wrapSafe (internal/modules/cjs/loader.js:984:16)
+    at Module._compile (internal/modules/cjs/loader.js:1032:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10) {"error":{},"stack":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:26\n    log.warn(`El siguiente producto no pasó la validación: ${req.body} - ${ errorDeValidacion`)\n\nSyntaxError: Missing } in template expression\n    at wrapSafe (internal/modules/cjs/loader.js:984:16)\n    at Module._compile (internal/modules/cjs/loader.js:1032:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)","exception":true,"date":"Fri Aug 13 2021 11:45:50 GMT-0300 (Argentina Standard Time)","process":{"pid":7252,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":37003264,"heapTotal":16986112,"heapUsed":9210864,"external":1489694,"arrayBuffers":102250}},"os":{"loadavg":[2.91162109375,2.8046875,2.43115234375],"uptime":9436},"trace":[{"column":16,"file":"internal/modules/cjs/loader.js","function":"wrapSafe","line":984,"method":null,"native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1032,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":25,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":6,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false}]}
+error: 2021-08-13T14:45:51.593Z uncaughtException: Missing } in template expression
+/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:26
+    log.warn(`El siguiente producto no pasó la validación: ${req.body} - ${errorDeValidacion`)
+
+SyntaxError: Missing } in template expression
+    at wrapSafe (internal/modules/cjs/loader.js:984:16)
+    at Module._compile (internal/modules/cjs/loader.js:1032:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10) {"error":{},"stack":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:26\n    log.warn(`El siguiente producto no pasó la validación: ${req.body} - ${errorDeValidacion`)\n\nSyntaxError: Missing } in template expression\n    at wrapSafe (internal/modules/cjs/loader.js:984:16)\n    at Module._compile (internal/modules/cjs/loader.js:1032:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)","exception":true,"date":"Fri Aug 13 2021 11:45:51 GMT-0300 (Argentina Standard Time)","process":{"pid":7256,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":37048320,"heapTotal":16986112,"heapUsed":9100928,"external":1489694,"arrayBuffers":102250}},"os":{"loadavg":[2.91845703125,2.8076171875,2.43408203125],"uptime":9437},"trace":[{"column":16,"file":"internal/modules/cjs/loader.js","function":"wrapSafe","line":984,"method":null,"native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1032,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":25,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":6,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false}]}
+error: 2021-08-13T14:45:54.250Z uncaughtException: Missing } in template expression
+/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:26
+    log.warn(`El siguiente producto no pasó la validación: ${req.body} - ${errorDeValidacion]`)
+                                                                           ^^^^^^^^^^^^^^^^^
+
+SyntaxError: Missing } in template expression
+    at wrapSafe (internal/modules/cjs/loader.js:984:16)
+    at Module._compile (internal/modules/cjs/loader.js:1032:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10) {"error":{},"stack":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.validate.js:26\n    log.warn(`El siguiente producto no pasó la validación: ${req.body} - ${errorDeValidacion]`)\n                                                                           ^^^^^^^^^^^^^^^^^\n\nSyntaxError: Missing } in template expression\n    at wrapSafe (internal/modules/cjs/loader.js:984:16)\n    at Module._compile (internal/modules/cjs/loader.js:1032:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:6:25)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)","exception":true,"date":"Fri Aug 13 2021 11:45:54 GMT-0300 (Argentina Standard Time)","process":{"pid":7266,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":37068800,"heapTotal":16986112,"heapUsed":9169152,"external":1489694,"arrayBuffers":102250}},"os":{"loadavg":[2.91845703125,2.8076171875,2.43408203125],"uptime":9440},"trace":[{"column":16,"file":"internal/modules/cjs/loader.js","function":"wrapSafe","line":984,"method":null,"native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1032,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":25,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":6,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false}]}
+info: 2021-08-13T14:45:55.961Z Escuchando el puerto 3000
+info: 2021-08-13T14:46:03.702Z Escuchando el puerto 3000
+warn: 2021-08-13T14:46:08.284Z El siguiente producto no pasó la validación: [object Object] - ["titulo" is required],["precio" is required],["moneda" is required]
+info: 2021-08-13T14:46:08.298Z ::1 - POST /productos/ HTTP/1.1 - - - - ms
+info: 2021-08-13T14:46:31.089Z Escuchando el puerto 3000
+info: 2021-08-13T14:46:41.435Z Escuchando el puerto 3000
+warn: 2021-08-13T14:46:44.928Z El siguiente producto no pasó la validación: [object Object] - ["titulo" is required],["precio" is required],["moneda" is required]   
+info: 2021-08-13T14:46:44.947Z ::1 - POST /productos/ HTTP/1.1 400 156 - 10.203 ms
+info: 2021-08-13T14:47:00.375Z Escuchando el puerto 3000
+info: 2021-08-13T14:47:01.433Z Escuchando el puerto 3000
+info: 2021-08-13T14:47:19.948Z Escuchando el puerto 3000
+info: 2021-08-13T14:47:24.123Z Escuchando el puerto 3000
+info: 2021-08-13T14:47:31.187Z Escuchando el puerto 3000
+info: 2021-08-13T14:47:53.701Z Escuchando el puerto 3000
+warn: 2021-08-13T14:48:00.388Z El siguiente producto no pasó la validación: [object Object] - ["titulo" is required],["precio" is required],["moneda" is required]   
+info: 2021-08-13T14:48:00.402Z ::1 - POST /productos/ HTTP/1.1 400 156 - 15.393 ms
+warn: 2021-08-13T14:48:02.855Z El siguiente producto no pasó la validación: [object Object] - ["titulo" is required],["precio" is required],["moneda" is required]   
+info: 2021-08-13T14:48:02.857Z ::1 - POST /productos/ HTTP/1.1 400 156 - 1.866 ms
+warn: 2021-08-13T14:48:03.587Z El siguiente producto no pasó la validación: [object Object] - ["titulo" is required],["precio" is required],["moneda" is required]   
+info: 2021-08-13T14:48:03.588Z ::1 - POST /productos/ HTTP/1.1 400 156 - 0.913 ms
+info: 2021-08-13T14:48:59.035Z Escuchando el puerto 3000
+warn: 2021-08-13T14:49:47.562Z El siguiente producto no pasó la validación: [object Object] - ["titulo" is required],["precio" is required],["moneda" is required]   
+info: 2021-08-13T14:49:47.583Z ::1 - POST /productos/ HTTP/1.1 400 156 - 39.136 ms
+warn: 2021-08-13T14:49:57.484Z El siguiente producto no pasó la validación: [object Object] - ["titulo" is required],["precio" is required],["moneda" is required]   
+info: 2021-08-13T14:49:57.488Z ::1 - POST /productos/ HTTP/1.1 400 156 - 6.499 ms
+warn: 2021-08-13T14:50:56.712Z El siguiente producto no pasó la validación: [object Object] - ["titulo" is required],["precio" is required],["moneda" is required]   
+info: 2021-08-13T14:50:56.714Z ::1 - POST /productos/ HTTP/1.1 400 156 - 2.355 ms
+warn: 2021-08-13T14:50:57.625Z El siguiente producto no pasó la validación: [object Object] - ["titulo" is required],["precio" is required],["moneda" is required]   
+info: 2021-08-13T14:50:57.630Z ::1 - POST /productos/ HTTP/1.1 400 156 - 1.452 ms
+info: 2021-08-13T14:51:42.499Z Productos agregado a la colección de productos
+info: 2021-08-13T14:51:42.500Z ::1 - POST /productos/ HTTP/1.1 201 88 - 18.414 ms
+info: 2021-08-13T14:52:05.306Z Escuchando el puerto 3000
+info: 2021-08-13T14:52:22.267Z Usuario administrador no existe. No puedo ser autenticado
+info: 2021-08-13T14:52:22.278Z ::1 - POST /usuarios/login HTTP/1.1 400 46 - 30.598 ms
+info: 2021-08-13T14:52:32.999Z Usuario admin completo autenticacion exitosamente
+info: 2021-08-13T14:52:33.000Z ::1 - POST /usuarios/login HTTP/1.1 200 199 - 93.995 ms
+info: 2021-08-13T14:52:57.165Z Usuario admin suministro un token valido. Autenticacion completada
+info: 2021-08-13T14:52:57.170Z Productos agregado a la colección de productos
+info: 2021-08-13T14:52:57.171Z ::1 - POST /productos/ HTTP/1.1 201 88 - 9.373 ms
+info: 2021-08-13T14:53:06.278Z ::1 - POST /productos/ HTTP/1.1 401 - - 1.079 ms
+info: 2021-08-13T14:53:34.260Z Usuario admin suministro un token valido. Autenticacion completada
+info: 2021-08-13T14:53:34.262Z Productos agregado a la colección de productos
+info: 2021-08-13T14:53:34.263Z ::1 - POST /productos/ HTTP/1.1 201 88 - 4.142 ms
+info: 2021-08-13T14:54:43.333Z Usuario admin suministro un token valido. Autenticacion completada
+info: 2021-08-13T14:54:43.335Z ::1 - PUT /productos/2606763d-10b5-457b-91f4-6d6eeb3a7a76 HTTP/1.1 500 1621 - 2.108 ms
+info: 2021-08-13T14:54:58.171Z Escuchando el puerto 3000
+info: 2021-08-13T14:54:59.823Z Usuario admin suministro un token valido. Autenticacion completada
+error: 2021-08-13T14:54:59.826Z Producto con id [2606763d-10b5-457b-91f4-6d6eeb3a7a76] no existe
+info: 2021-08-13T14:54:59.838Z ::1 - PUT /productos/2606763d-10b5-457b-91f4-6d6eeb3a7a76 HTTP/1.1 404 64 - 27.389 ms
+info: 2021-08-13T14:55:11.730Z Usuario admin suministro un token valido. Autenticacion completada
+info: 2021-08-13T14:55:11.734Z Productos agregado a la colección de productos
+info: 2021-08-13T14:55:11.735Z ::1 - POST /productos/ HTTP/1.1 201 88 - 5.987 ms
+info: 2021-08-13T14:55:21.855Z Usuario admin suministro un token valido. Autenticacion completada
+info: 2021-08-13T14:55:21.856Z Usuario admin no es el dueño del producto con id 8e649967-76c7-4c73-bc08-409dbdc819ee. Dueño real es el undefined. Request no será procesado
+info: 2021-08-13T14:55:21.859Z ::1 - PUT /productos/8e649967-76c7-4c73-bc08-409dbdc819ee HTTP/1.1 500 1628 - 3.864 ms
+info: 2021-08-13T14:55:49.372Z Escuchando el puerto 3000
+info: 2021-08-13T14:55:50.810Z Usuario admin suministro un token valido. Autenticacion completada
+error: 2021-08-13T14:55:50.813Z Producto con id [8e649967-76c7-4c73-bc08-409dbdc819ee] no existe
+info: 2021-08-13T14:55:50.824Z ::1 - PUT /productos/8e649967-76c7-4c73-bc08-409dbdc819ee HTTP/1.1 404 64 - 27.850 ms
+info: 2021-08-13T14:56:17.686Z Escuchando el puerto 3000
+info: 2021-08-13T14:56:27.946Z Usuario admin suministro un token valido. Autenticacion completada
+info: 2021-08-13T14:56:27.952Z Usuario admin no es el dueño del producto con id 1234. Dueño real es el undefined. Request no será procesado
+info: 2021-08-13T14:56:27.958Z Producto con id [1234] remplazado con nuevo producto {"titulo":"coso","precio":10,"moneda":"USD","id":"1234","dueño":"admin"}
+info: 2021-08-13T14:56:27.970Z ::1 - PUT /productos/1234 HTTP/1.1 200 98 - 25.877 ms
+info: 2021-08-13T14:56:53.500Z Usuario admin suministro un token valido. Autenticacion completada
+warn: 2021-08-13T14:56:53.502Z El siguiente producto no pasó la validación: [object Object] - ["dueño" is not allowed]   
+info: 2021-08-13T14:56:53.503Z ::1 - PUT /productos/1234 HTTP/1.1 400 113 - 3.897 ms
+info: 2021-08-13T14:57:06.425Z Escuchando el puerto 3000
+info: 2021-08-13T14:57:12.245Z Escuchando el puerto 3000
+info: 2021-08-13T14:57:23.129Z Escuchando el puerto 3000
+info: 2021-08-13T14:57:28.275Z Escuchando el puerto 3000
+info: 2021-08-13T14:57:30.675Z Escuchando el puerto 3000
+info: 2021-08-13T14:57:35.260Z Escuchando el puerto 3000
+info: 2021-08-13T14:57:37.963Z Escuchando el puerto 3000
+info: 2021-08-13T14:57:39.790Z Escuchando el puerto 3000
+info: 2021-08-13T14:57:42.709Z Usuario admin suministro un token valido. Autenticacion completada
+warn: 2021-08-13T14:57:42.713Z El siguiente producto no pasó la validación: [object Object] - ["dueño" is not allowed]   
+info: 2021-08-13T14:57:42.721Z ::1 - PUT /productos/1234 HTTP/1.1 400 113 - 19.113 ms
+info: 2021-08-13T14:57:44.442Z Usuario admin suministro un token valido. Autenticacion completada
+warn: 2021-08-13T14:57:44.442Z El siguiente producto no pasó la validación: [object Object] - ["dueño" is not allowed]   
+info: 2021-08-13T14:57:44.445Z ::1 - PUT /productos/1234 HTTP/1.1 400 113 - 2.572 ms
+info: 2021-08-13T14:58:22.798Z Usuario admin suministro un token valido. Autenticacion completada
+warn: 2021-08-13T14:58:22.799Z El siguiente producto no pasó la validación: [object Object] - ["dueño" is not allowed]   
+info: 2021-08-13T14:58:22.800Z ::1 - PUT /productos/1234 HTTP/1.1 400 113 - 2.128 ms
+info: 2021-08-13T14:58:23.987Z Usuario admin suministro un token valido. Autenticacion completada
+warn: 2021-08-13T14:58:23.987Z El siguiente producto no pasó la validación: [object Object] - ["dueño" is not allowed]   
+info: 2021-08-13T14:58:23.988Z ::1 - PUT /productos/1234 HTTP/1.1 400 113 - 2.475 ms
+info: 2021-08-13T14:58:55.417Z Usuario admin suministro un token valido. Autenticacion completada
+info: 2021-08-13T14:58:55.418Z Producto con id [1234] remplazado con nuevo producto {"titulo":"cosa","precio":10,"moneda":"USD","id":"1234","dueño":"admin"}
+info: 2021-08-13T14:58:55.419Z ::1 - PUT /productos/1234 HTTP/1.1 200 73 - 1.967 ms
+info: 2021-08-13T14:59:34.702Z ::1 - PUT /productos/1234 HTTP/1.1 401 - - 0.839 ms
+info: 2021-08-13T14:59:37.933Z Usuario admin suministro un token valido. Autenticacion completada
+info: 2021-08-13T14:59:37.933Z Producto con id [1234] remplazado con nuevo producto {"titulo":"cosa","precio":10,"moneda":"USD","id":"1234","dueño":"admin"}
+info: 2021-08-13T14:59:37.934Z ::1 - PUT /productos/1234 HTTP/1.1 200 73 - 1.430 ms
+info: 2021-08-13T14:59:45.272Z Usuario admin suministro un token valido. Autenticacion completada
+info: 2021-08-13T14:59:45.272Z Producto con id [1234] remplazado con nuevo producto {"titulo":"cosa","precio":100,"moneda":"USD","id":"1234","dueño":"admin"}
+info: 2021-08-13T14:59:45.278Z ::1 - PUT /productos/1234 HTTP/1.1 200 74 - 2.425 ms
+info: 2021-08-13T15:00:19.407Z ::1 - GET /productos HTTP/1.1 200 235 - 0.810 ms
+warn: 2021-08-13T15:02:15.977Z Los datos del usuario  no paso la validacion:  {"username":"admin##","password":"admin##","email":"email@email.com"}
+info: 2021-08-13T15:02:15.978Z ::1 - POST /usuarios HTTP/1.1 400 61 - 4.423 ms
+info: 2021-08-13T15:02:21.924Z ::1 - POST /usuarios HTTP/1.1 201 27 - 91.325 ms
+info: 2021-08-13T15:02:40.067Z Usuario admin123 completo autenticacion exitosamente
+info: 2021-08-13T15:02:40.068Z ::1 - POST /usuarios/login HTTP/1.1 200 199 - 86.148 ms
+info: 2021-08-13T15:03:02.620Z ::1 - GET /productos HTTP/1.1 200 235 - 0.595 ms
+info: 2021-08-13T15:03:04.534Z ::1 - GET /productos HTTP/1.1 200 235 - 0.730 ms
+info: 2021-08-13T15:03:19.971Z Usuario admin123 completo autenticacion exitosamente
+info: 2021-08-13T15:03:19.972Z ::1 - POST /usuarios/login HTTP/1.1 200 199 - 89.199 ms
+info: 2021-08-13T15:03:35.088Z ::1 - GET /productos HTTP/1.1 200 235 - 1.535 ms
+info: 2021-08-13T15:03:51.806Z ::1 - GET /productos/1234 HTTP/1.1 200 74 - 0.663 ms
+info: 2021-08-13T15:03:53.678Z ::1 - GET /productos/1234 HTTP/1.1 200 74 - 0.765 ms
+info: 2021-08-13T15:04:04.521Z ::1 - GET /productos/1234 HTTP/1.1 200 74 - 0.506 ms
+info: 2021-08-13T15:04:13.356Z Escuchando el puerto 3000
+info: 2021-08-13T15:04:17.187Z Escuchando el puerto 3000
+info: 2021-08-13T15:04:58.767Z Escuchando el puerto 3000
+info: 2021-08-13T15:05:03.325Z Escuchando el puerto 3000
+info: 2021-08-13T15:05:09.862Z Escuchando el puerto 3000
+info: 2021-08-13T15:05:13.829Z Escuchando el puerto 3000
+info: 2021-08-13T15:05:19.691Z ::1 - GET /productos/1234 HTTP/1.1 200 84 - 15.746 ms
+info: 2021-08-13T15:06:02.271Z JWT token no es valido. Usuario con el id 993cf6ff-e4b6-4fa0-abd6-3581a468c86d no existe
+info: 2021-08-13T15:06:02.273Z ::1 - PUT /productos/1234 HTTP/1.1 401 - - 5.124 ms
+info: 2021-08-13T15:06:27.118Z JWT token no es valido. Usuario con el id 993cf6ff-e4b6-4fa0-abd6-3581a468c86d no existe
+info: 2021-08-13T15:06:27.119Z ::1 - PUT /productos/1234 HTTP/1.1 401 - - 1.257 ms
+info: 2021-08-13T15:06:42.245Z Usuario admin suministro un token valido. Autenticacion completada
+info: 2021-08-13T15:06:42.256Z Productos agregado a la colección de productos
+info: 2021-08-13T15:06:42.258Z ::1 - POST /productos/ HTTP/1.1 201 88 - 12.476 ms
+info: 2021-08-13T15:06:45.814Z Usuario admin123 no existe. No puedo ser autenticado
+info: 2021-08-13T15:06:45.816Z ::1 - POST /usuarios/login HTTP/1.1 400 46 - 1.697 ms
+info: 2021-08-13T15:06:48.729Z Usuario admin123 no existe. No puedo ser autenticado
+info: 2021-08-13T15:06:48.730Z ::1 - POST /usuarios/login HTTP/1.1 400 46 - 1.263 ms
+info: 2021-08-13T15:06:49.428Z Usuario admin123 no existe. No puedo ser autenticado
+info: 2021-08-13T15:06:49.429Z ::1 - POST /usuarios/login HTTP/1.1 400 46 - 1.648 ms
+info: 2021-08-13T15:06:49.716Z Usuario admin123 no existe. No puedo ser autenticado
+info: 2021-08-13T15:06:49.717Z ::1 - POST /usuarios/login HTTP/1.1 400 46 - 0.966 ms
+info: 2021-08-13T15:06:50.026Z Usuario admin123 no existe. No puedo ser autenticado
+info: 2021-08-13T15:06:50.027Z ::1 - POST /usuarios/login HTTP/1.1 400 46 - 1.026 ms
+info: 2021-08-13T15:06:57.411Z ::1 - POST /usuarios HTTP/1.1 201 27 - 94.166 ms
+info: 2021-08-13T15:07:08.096Z Usuario admin123 completo autenticacion exitosamente
+info: 2021-08-13T15:07:08.098Z ::1 - POST /usuarios/login HTTP/1.1 200 199 - 145.060 ms
+info: 2021-08-13T15:07:18.204Z Usuario admin123 suministro un token valido. Autenticacion completada
+info: 2021-08-13T15:07:18.205Z Usuario admin123 no es el dueño del producto con id 1234. Dueño real es el admin. Request no será procesado
+info: 2021-08-13T15:07:18.206Z Producto con id [1234] remplazado con nuevo producto {"titulo":"cdosa","precio":1000,"moneda":"USD","id":"1234","dueño":"admin123"}
+info: 2021-08-13T15:07:18.207Z ::1 - PUT /productos/1234 HTTP/1.1 200 98 - 1.594 ms
+info: 2021-08-13T15:07:41.375Z Escuchando el puerto 3000
+info: 2021-08-13T15:07:42.254Z JWT token no es valido. Usuario con el id d5cf887d-536e-4aca-84dc-afb3d3954e74 no existe
+info: 2021-08-13T15:07:42.259Z ::1 - PUT /productos/1234 HTTP/1.1 401 - - 20.008 ms
+info: 2021-08-13T15:07:43.656Z JWT token no es valido. Usuario con el id d5cf887d-536e-4aca-84dc-afb3d3954e74 no existe
+info: 2021-08-13T15:07:43.656Z ::1 - PUT /productos/1234 HTTP/1.1 401 - - 1.664 ms
+info: 2021-08-13T15:07:46.844Z Usuario admin123 no existe. No puedo ser autenticado
+info: 2021-08-13T15:07:46.846Z ::1 - POST /usuarios/login HTTP/1.1 400 46 - 4.863 ms
+info: 2021-08-13T15:09:11.726Z Escuchando el puerto 3000
+info: 2021-08-13T15:10:25.073Z ::1 - POST /usuarios HTTP/1.1 201 27 - 114.633 ms
+info: 2021-08-13T15:10:33.948Z Usuario admin123 completo autenticacion exitosamente
+info: 2021-08-13T15:10:33.949Z ::1 - POST /usuarios/login HTTP/1.1 200 199 - 139.278 ms
+info: 2021-08-13T15:10:46.100Z JWT token no es valido. Usuario con el id d5cf887d-536e-4aca-84dc-afb3d3954e74 no existe
+info: 2021-08-13T15:10:46.101Z ::1 - DELETE /productos/1234 HTTP/1.1 401 - - 3.592 ms
+info: 2021-08-13T15:10:52.920Z Usuario admin123 suministro un token valido. Autenticacion completada
+info: 2021-08-13T15:10:52.926Z ::1 - DELETE /productos/1234 HTTP/1.1 500 1662 - 2.817 ms
+info: 2021-08-13T15:11:11.773Z Escuchando el puerto 3000
+info: 2021-08-13T15:11:12.931Z Escuchando el puerto 3000
+info: 2021-08-13T15:11:23.852Z Escuchando el puerto 3000
+info: 2021-08-13T15:11:28.483Z JWT token no es valido. Usuario con el id 98c53cfb-ea5c-43e2-8933-bce0c42b5a74 no existe
+info: 2021-08-13T15:11:28.492Z ::1 - DELETE /productos/1234 HTTP/1.1 401 - - 18.545 ms
+info: 2021-08-13T15:11:36.051Z ::1 - POST /usuarios HTTP/1.1 201 27 - 99.103 ms
+info: 2021-08-13T15:11:42.971Z Usuario admin123 completo autenticacion exitosamente
+info: 2021-08-13T15:11:42.974Z ::1 - POST /usuarios/login HTTP/1.1 200 199 - 117.026 ms
+info: 2021-08-13T15:11:56.597Z Usuario admin123 suministro un token valido. Autenticacion completada
+info: 2021-08-13T15:11:56.598Z Usuario admin123 no es el dueño del producto con id 1234. Dueño real es el admin. Request no será procesado
+info: 2021-08-13T15:11:56.600Z ::1 - DELETE /productos/1234 HTTP/1.1 500 1662 - 2.894 ms
+info: 2021-08-13T15:12:04.146Z Escuchando el puerto 3000
+info: 2021-08-13T15:12:04.746Z Escuchando el puerto 3000
+info: 2021-08-13T15:12:06.527Z JWT token no es valido. Usuario con el id 547dbb58-ae90-424f-89f2-f8db30ad39e1 no existe
+info: 2021-08-13T15:12:06.545Z ::1 - DELETE /productos/1234 HTTP/1.1 401 - - 63.526 ms
+info: 2021-08-13T15:12:12.526Z ::1 - POST /usuarios HTTP/1.1 201 27 - 112.148 ms
+info: 2021-08-13T15:12:18.315Z Usuario admin123 completo autenticacion exitosamente
+info: 2021-08-13T15:12:18.316Z ::1 - POST /usuarios/login HTTP/1.1 200 199 - 85.001 ms
+info: 2021-08-13T15:12:27.964Z Usuario admin123 suministro un token valido. Autenticacion completada
+info: 2021-08-13T15:12:27.965Z Usuario admin123 no es el dueño del producto con id 1234. Dueño real es el admin. Request no será procesado
+info: 2021-08-13T15:12:27.966Z Producto con id [1234] fue borrado
+info: 2021-08-13T15:12:27.967Z ::1 - DELETE /productos/1234 HTTP/1.1 404 84 - 2.565 ms

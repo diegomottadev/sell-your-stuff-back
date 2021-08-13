@@ -1,6 +1,6 @@
 const express = require('express')
 const bodyParser = require('body-parser')
-const productsRouter = require('./api/resourses/products/products.route')
+const productosRouter = require('./api/resourses/products/products.route')
 const usuariosRouter = require('./api/resourses/usuarios/usuarios.route')
 
 const morgan = require('morgan');
@@ -24,7 +24,7 @@ app.use(bodyParser.json())
 //passport.use(new BasicStrategy(auth))
 app.use(passport.initialize())
 
-app.use('/products',productsRouter)
+app.use('/productos',productosRouter)
 app.use('/usuarios',usuariosRouter)
 
 // app.get('/',passport.authenticate('basic',{session:false}), (req,res)=> {

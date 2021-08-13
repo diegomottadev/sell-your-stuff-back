@@ -2,34 +2,30 @@ const express = require('express')
 const _ = require('underscore')
 const products = require("./../../../database").products
 const uuidv4 = require('uuid/v4')
-
-const validarProducto = require('./products.validate')
 const log = require('./../utils/logger')
+const validarProducto = require('./products.validate').validarProducto
 const passport = require('passport')
-
+const productosRouter = express.Router()
 const jwtAuthenticate = passport.authenticate('jwt', { session: false })
 
-
-const productsRouter = express.Router()
-
-productsRouter.get("/", (req, res) => {
+productosRouter.get("/", (req, res) => {
     res.json(products)
 })
 //localhost:3000/productos
-productsRouter.post('/', [jwtAuthenticate, validarProducto], (req, res) => {
+productosRouter.post('/', [jwtAuthenticate,validarProducto], (req,res)=>{
     let nuevoProducto = {
         ...req.body,
         id: uuidv4(),
-        dueño: req.user.username
+        //dueño: req.user.username
     }
-
+    console.log(nuevoProducto)
     products.push(nuevoProducto)
     log.info("Productos agregado a la colección de productos")
     res.status(201).json(nuevoProducto)
 
 })
 
-productsRouter.get('/:id', (req, res) => {
+productosRouter.get('/:id', (req, res) => {
     for (let producto of products) {
         if (producto.id == req.params.id) {
             res.json(producto);
@@ -40,20 +36,19 @@ productsRouter.get('/:id', (req, res) => {
     return res.status(404).send(`Producto [${req.params.id}] no encontrado`)
 })
 
-productsRouter.put('/:id', [jwtAuthenticate, validarProducto], (req, res) => {
+productosRouter.put('/:id', [jwtAuthenticate, validarProducto], (req, res) => {
     let reemplazoParaProducto = {
         ...req.body,
         id: req.params.id,
         dueño: req.user.username
     }
 
-
-
     let indice = _.findIndex(products, product => product.id == reemplazoParaProducto.id)
     if (indice !== -1) {
-        if (products[indece].dueño !== reemplazoParaProducto.dueño) {
+        console.log(products[indice].dueño, reemplazoParaProducto.dueño);
+        if (products[indice].dueño !== reemplazoParaProducto.dueño) {
             log.info(`Usuario ${req.user.username} no es el dueño del producto con id ${reemplazoParaProducto.id}. Dueño real es el ${products[indice].dueño}. Request no será procesado`)
-            res.status.send(`No eres dueño del producto con id ${reemplazoParaProducto}. Solo puedes modificar productos creados por ti`)
+            res.status(404).send(`No eres dueño del producto con id ${reemplazoParaProducto.id}. Solo puedes modificar productos creados por ti`)
         }
         products[indice] = reemplazoParaProducto;
         log.info(`Producto con id [${reemplazoParaProducto.id}] remplazado con nuevo producto`, reemplazoParaProducto)
@@ -65,7 +60,7 @@ productsRouter.put('/:id', [jwtAuthenticate, validarProducto], (req, res) => {
     }
 })
 
-productsRouter.delete('/:id', jwtAuthenticate, (req, res) => {
+productosRouter.delete('/:id', jwtAuthenticate, (req, res) => {
     let indiceABorrar = _.findIndex(products, product => product.id === req.params.id);
     console.log(indiceABorrar)
     if (indiceABorrar === -1) {
@@ -75,8 +70,8 @@ productsRouter.delete('/:id', jwtAuthenticate, (req, res) => {
     }
 
     if (products[indiceABorrar].dueño !== req.user.username) {
-        log.info(`Usuario ${req.user.username} no es el dueño del producto con id ${products[indeceABorrar].id}. Dueño real es el ${products[indeceABorrar].dueño}. Request no será procesado`)
-        res.status.send(`No eres dueño del producto con id ${products[indeceABorrar]}. Solo puedes borrar productos creados por ti`)
+        log.info(`Usuario ${req.user.username} no es el dueño del producto con id ${products[indiceABorrar].id}. Dueño real es el ${products[indiceABorrar].dueño}. Request no será procesado`)
+        res.status(404).send(`No eres dueño del producto con id ${products[indiceABorrar].id}. Solo puedes borrar productos creados por ti`)
     }
 
     log.info(`Producto con id [${req.params.id}] fue borrado`)
@@ -85,4 +80,4 @@ productsRouter.delete('/:id', jwtAuthenticate, (req, res) => {
 
 });
 
-module.exports = productsRouter;
+module.exports = productosRouter;

@@ -1,10 +1,10 @@
-const products = [
-    {id:'12',titulo:'mackpro13',precio:1300, moneda: 'USD'},
-    {id:'123',titulo:'microfono',precio:1300, moneda: 'USD'},
-    {id:'1234',titulo:'taza de cafe ',precio:1300, moneda: 'USD'}
+let products = [
+    {id:'12',titulo:'mackpro13',precio:1300, moneda: 'USD', dueño: "admin"},
+    {id:'123',titulo:'microfono',precio:1300, moneda: 'USD',dueño: "admin"},
+    {id:'1234',titulo:'taza de cafe ',precio:1300, moneda: 'USD',dueño: "admin"},
 ]
 
-const usuarios = [
+let usuarios = [
     {
         username: 'admin',
         email: 'admin@admin.com',

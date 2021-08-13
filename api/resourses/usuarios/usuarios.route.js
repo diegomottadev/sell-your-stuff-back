@@ -1,15 +1,15 @@
 const express = require('express')
 const _ = require('underscore')
-
+const usuarios = require("./../../../database").usuarios
+const uuidv4 = require('uuid/v4')
 const bcrypt = require('bcrypt')
 const log = require('./../utils/logger')
 const validarUsuario = require('./usuarios.validate').validarUsuario
 const validarPedidoDeLogin = require('./usuarios.validate').validarPedidoDeLogin
 
-const usuarios = require("./../../../database").usuarios
 const usuariosRouter = express.Router()
+
 const jwt = require('jsonwebtoken')
-const uuidv4 = require('uuid/v4')
 
 usuariosRouter.get('/',(req,res)=>{
     res.json(usuarios)
