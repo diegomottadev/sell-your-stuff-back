@@ -30,11 +30,6 @@ app.use('/usuarios',usuariosRouter)
 // app.get('/',passport.authenticate('basic',{session:false}), (req,res)=> {
 //     res.send('API de vendetuscosas.com')
 // })
-app.get('/',passport.authenticate('jwt',{session:false}), (req,res)=> {
-    //tener el user en el requesr
-    logger.info(req.user)
-    res.send('API de vendetuscosas.com')
-})
 app.listen(3000,()=>{
     logger.info('Escuchando el puerto 3000')
 });

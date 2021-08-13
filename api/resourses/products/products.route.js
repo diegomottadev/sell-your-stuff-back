@@ -2,62 +2,87 @@ const express = require('express')
 const _ = require('underscore')
 const products = require("./../../../database").products
 const uuidv4 = require('uuid/v4')
-const productsRouter = express.Router()
+
 const validarProducto = require('./products.validate')
 const log = require('./../utils/logger')
-productsRouter.get("/",(req,res)=> {
+const passport = require('passport')
+
+const jwtAuthenticate = passport.authenticate('jwt', { session: false })
+
+
+const productsRouter = express.Router()
+
+productsRouter.get("/", (req, res) => {
     res.json(products)
 })
 //localhost:3000/productos
-productsRouter.post('/', validarProducto,(req,res) =>{
-    let nuevoProducto = req.body
+productsRouter.post('/', [jwtAuthenticate, validarProducto], (req, res) => {
+    let nuevoProducto = {
+        ...req.body,
+        id: uuidv4(),
+        dueño: req.user.username
+    }
 
-    nuevoProducto.id = uuidv4()
     products.push(nuevoProducto)
-    //Created 200
+    log.info("Productos agregado a la colección de productos")
     res.status(201).json(nuevoProducto)
 
 })
 
-productsRouter.get('/:id',(req,res)=> {
-    for( let producto of products){
-        if (producto.id == req.params.id){
+productsRouter.get('/:id', (req, res) => {
+    for (let producto of products) {
+        if (producto.id == req.params.id) {
             res.json(producto);
             return;
         }
     }
     log.warn(`Producto [${req.params.id}] no encontrado`)
     return res.status(404).send(`Producto [${req.params.id}] no encontrado`)
-    })
+})
 
-productsRouter.put('/:id',validarProducto,(req,res)=>{
-        let id = req.params.id
-        let reemplazoParaProducto = req.body;
-        let indice =  _.findIndex(products,product => product.id == id)
-        if(indice !== -1){
-            reemplazoParaProducto.id = id
-            products[indice] = reemplazoParaProducto;
-            log.info(`Producto con id [${id}] remplazado con nuevo producto`, reemplazoParaProducto)
+productsRouter.put('/:id', [jwtAuthenticate, validarProducto], (req, res) => {
+    let reemplazoParaProducto = {
+        ...req.body,
+        id: req.params.id,
+        dueño: req.user.username
+    }
 
-            res.status(200).json(reemplazoParaProducto);
-        }else{
-            log.error(`Producto [${req.params.id}] no encontrado`)
-            res.status(404).send(`Producto [${id}] no encontrado`);
 
+
+    let indice = _.findIndex(products, product => product.id == reemplazoParaProducto.id)
+    if (indice !== -1) {
+        if (products[indece].dueño !== reemplazoParaProducto.dueño) {
+            log.info(`Usuario ${req.user.username} no es el dueño del producto con id ${reemplazoParaProducto.id}. Dueño real es el ${products[indice].dueño}. Request no será procesado`)
+            res.status.send(`No eres dueño del producto con id ${reemplazoParaProducto}. Solo puedes modificar productos creados por ti`)
         }
-    })
+        products[indice] = reemplazoParaProducto;
+        log.info(`Producto con id [${reemplazoParaProducto.id}] remplazado con nuevo producto`, reemplazoParaProducto)
+        res.status(200).json(reemplazoParaProducto);
+    } else {
+        log.error(`Producto con id [${reemplazoParaProducto.id}] no existe`)
+        res.status(404).send(`Producto con id [${reemplazoParaProducto.id}] no existe`);
 
-productsRouter.delete('/:id',(req,res)=>{
-        let indiceABorrar = _.findIndex(products, product => product.id === req.params.id);
-        console.log(indiceABorrar)
-        if(indiceABorrar === -1){
-            log.error(`Producto [${req.params.id}] no encontrado. Nada que borrar`)
-            res.status(404).send(`Producto [${req.params.id}] no encontrado. Nada que borrar`)
-            return
-        }
-        let borrado = products.splice(indiceABorrar,1);
-        res.json(borrado);
+    }
+})
 
-    });
+productsRouter.delete('/:id', jwtAuthenticate, (req, res) => {
+    let indiceABorrar = _.findIndex(products, product => product.id === req.params.id);
+    console.log(indiceABorrar)
+    if (indiceABorrar === -1) {
+        log.error(`Producto [${req.params.id}] no encontrado. Nada que borrar`)
+        res.status(404).send(`Producto [${req.params.id}] no encontrado. Nada que borrar`)
+        return
+    }
 
-    module.exports = productsRouter;
+    if (products[indiceABorrar].dueño !== req.user.username) {
+        log.info(`Usuario ${req.user.username} no es el dueño del producto con id ${products[indeceABorrar].id}. Dueño real es el ${products[indeceABorrar].dueño}. Request no será procesado`)
+        res.status.send(`No eres dueño del producto con id ${products[indeceABorrar]}. Solo puedes borrar productos creados por ti`)
+    }
+
+    log.info(`Producto con id [${req.params.id}] fue borrado`)
+    let borrado = products.splice(indiceABorrar, 1);
+    res.json(borrado);
+
+});
+
+module.exports = productsRouter;

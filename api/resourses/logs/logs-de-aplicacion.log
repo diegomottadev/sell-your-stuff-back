@@ -4865,3 +4865,133 @@ info: 2021-08-12T14:25:10.180Z Escuchando el puerto 3000
 info: 2021-08-12T14:25:28.233Z Usuario diegote suministro un token valido. Autenticacion completada
 info: 2021-08-12T14:25:28.244Z [object Object]
 info: 2021-08-12T14:25:28.282Z ::1 - GET / HTTP/1.1 200 24 - 61.693 ms
+info: 2021-08-13T12:16:37.583Z Escuchando el puerto 3000
+info: 2021-08-13T12:17:07.034Z ::1 - GET /static/js/bundle.js HTTP/1.1 404 158 - 5.923 ms
+info: 2021-08-13T12:17:07.037Z ::1 - GET /static/js/0.chunk.js HTTP/1.1 404 159 - 1.247 ms
+info: 2021-08-13T12:17:07.039Z ::1 - GET /static/js/main.chunk.js HTTP/1.1 404 162 - 0.793 ms
+info: 2021-08-13T12:17:07.479Z ::1 - GET /favicon.ico HTTP/1.1 404 150 - 0.579 ms
+info: 2021-08-13T12:23:13.609Z Escuchando el puerto 3000
+info: 2021-08-13T12:23:21.647Z Escuchando el puerto 3000
+info: 2021-08-13T12:23:47.374Z Escuchando el puerto 3000
+error: 2021-08-13T12:23:49.586Z uncaughtException: The "id" argument must be of type string. Received undefined
+TypeError [ERR_INVALID_ARG_TYPE]: The "id" argument must be of type string. Received undefined
+    at validateString (internal/validators.js:124:11)
+    at Module.require (internal/modules/cjs/loader.js:950:3)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:8:24)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18) {"error":{"code":"ERR_INVALID_ARG_TYPE"},"stack":"TypeError [ERR_INVALID_ARG_TYPE]: The \"id\" argument must be of type string. Received undefined\n    at validateString (internal/validators.js:124:11)\n    at Module.require (internal/modules/cjs/loader.js:950:3)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:8:24)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)","exception":true,"date":"Fri Aug 13 2021 09:23:49 GMT-0300 (Argentina Standard Time)","process":{"pid":2581,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":40865792,"heapTotal":18034688,"heapUsed":12238928,"external":1649329,"arrayBuffers":261885}},"os":{"loadavg":[6.1455078125,6.13525390625,5.07470703125],"uptime":915},"trace":[{"column":11,"file":"internal/validators.js","function":"validateString","line":124,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":950,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":24,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":8,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false}]}
+error: 2021-08-13T12:24:19.520Z uncaughtException: The "id" argument must be of type string. Received undefined
+TypeError [ERR_INVALID_ARG_TYPE]: The "id" argument must be of type string. Received undefined
+    at validateString (internal/validators.js:124:11)
+    at Module.require (internal/modules/cjs/loader.js:950:3)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:8:24)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18) {"error":{"code":"ERR_INVALID_ARG_TYPE"},"stack":"TypeError [ERR_INVALID_ARG_TYPE]: The \"id\" argument must be of type string. Received undefined\n    at validateString (internal/validators.js:124:11)\n    at Module.require (internal/modules/cjs/loader.js:950:3)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:8:24)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)","exception":true,"date":"Fri Aug 13 2021 09:24:19 GMT-0300 (Argentina Standard Time)","process":{"pid":2630,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":42262528,"heapTotal":17772544,"heapUsed":12178632,"external":1649329,"arrayBuffers":261885}},"os":{"loadavg":[8.173828125,6.50146484375,5.236328125],"uptime":945},"trace":[{"column":11,"file":"internal/validators.js","function":"validateString","line":124,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":950,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":24,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":8,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false}]}
+info: 2021-08-13T12:24:25.415Z Escuchando el puerto 3000
+info: 2021-08-13T12:24:58.116Z Escuchando el puerto 3000
+error: 2021-08-13T12:25:17.677Z uncaughtException: pass is not defined
+ReferenceError: pass is not defined
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:9:25)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js:3:24)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10) {"error":{},"stack":"ReferenceError: pass is not defined\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:9:25)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js:3:24)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)","exception":true,"date":"Fri Aug 13 2021 09:25:17 GMT-0300 (Argentina Standard Time)","process":{"pid":2684,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":42848256,"heapTotal":17772544,"heapUsed":12663496,"external":1701008,"arrayBuffers":313564}},"os":{"loadavg":[5.7509765625,6.2138671875,5.21484375],"uptime":1003},"trace":[{"column":25,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":9,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":24,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js","function":null,"line":3,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false}]}
+info: 2021-08-13T12:25:20.139Z Escuchando el puerto 3000
+info: 2021-08-13T12:25:21.962Z Escuchando el puerto 3000
+info: 2021-08-13T12:25:24.156Z Escuchando el puerto 3000
+info: 2021-08-13T12:25:26.614Z Escuchando el puerto 3000
+info: 2021-08-13T12:25:31.854Z Escuchando el puerto 3000
+info: 2021-08-13T12:25:35.290Z Escuchando el puerto 3000
+error: 2021-08-13T12:25:40.019Z uncaughtException: session is not defined
+ReferenceError: session is not defined
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:9:54)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js:3:24)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10) {"error":{},"stack":"ReferenceError: session is not defined\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:9:54)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js:3:24)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)","exception":true,"date":"Fri Aug 13 2021 09:25:40 GMT-0300 (Argentina Standard Time)","process":{"pid":2744,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":41578496,"heapTotal":17772544,"heapUsed":12614040,"external":1692816,"arrayBuffers":305372}},"os":{"loadavg":[6.95458984375,6.4658203125,5.33447265625],"uptime":1026},"trace":[{"column":54,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":9,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":24,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js","function":null,"line":3,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false}]}
+info: 2021-08-13T12:25:42.721Z Escuchando el puerto 3000
+info: 2021-08-13T12:25:44.238Z Escuchando el puerto 3000
+error: 2021-08-13T12:26:37.815Z uncaughtException: productsRouter is not defined
+ReferenceError: productsRouter is not defined
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:12:1)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js:3:24)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10) {"error":{},"stack":"ReferenceError: productsRouter is not defined\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js:12:1)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js:3:24)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)","exception":true,"date":"Fri Aug 13 2021 09:26:37 GMT-0300 (Argentina Standard Time)","process":{"pid":2786,"uid":501,"gid":20,"cwd":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api","execPath":"/Users/diego/.nvm/versions/node/v14.17.0/bin/node","version":"v14.17.0","argv":["/Users/diego/.nvm/versions/node/v14.17.0/bin/node","/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js"],"memoryUsage":{"rss":41734144,"heapTotal":17772544,"heapUsed":12568024,"external":1692816,"arrayBuffers":305372}},"os":{"loadavg":[3.99755859375,5.71484375,5.123046875],"uptime":1083},"trace":[{"column":1,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/api/resourses/products/products.route.js","function":null,"line":12,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":24,"file":"/Users/diego/Documents/proyectos/nodejs/vende_tus_cosas_api/index.js","function":null,"line":3,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false}]}
+info: 2021-08-13T12:26:39.576Z Escuchando el puerto 3000
+info: 2021-08-13T12:26:40.564Z Escuchando el puerto 3000
+info: 2021-08-13T12:26:42.603Z Escuchando el puerto 3000
+info: 2021-08-13T12:26:44.618Z Escuchando el puerto 3000
+info: 2021-08-13T12:26:46.436Z Escuchando el puerto 3000
+info: 2021-08-13T12:26:49.300Z Escuchando el puerto 3000
+info: 2021-08-13T12:26:53.669Z Escuchando el puerto 3000
+info: 2021-08-13T12:27:34.616Z Escuchando el puerto 3000
+info: 2021-08-13T12:27:50.190Z Escuchando el puerto 3000
+info: 2021-08-13T12:28:20.803Z Escuchando el puerto 3000
+info: 2021-08-13T12:28:22.629Z Escuchando el puerto 3000
+info: 2021-08-13T12:28:28.004Z Escuchando el puerto 3000
+info: 2021-08-13T12:28:43.085Z Escuchando el puerto 3000
+info: 2021-08-13T12:28:53.575Z Escuchando el puerto 3000
+info: 2021-08-13T12:28:55.456Z Escuchando el puerto 3000
+info: 2021-08-13T12:38:19.633Z Escuchando el puerto 3000
+info: 2021-08-13T12:38:20.796Z Escuchando el puerto 3000
+info: 2021-08-13T12:39:01.150Z Escuchando el puerto 3000
+info: 2021-08-13T12:39:47.079Z Escuchando el puerto 3000
+info: 2021-08-13T12:39:52.364Z Escuchando el puerto 3000
+info: 2021-08-13T12:39:57.784Z Escuchando el puerto 3000
+info: 2021-08-13T12:40:00.825Z Escuchando el puerto 3000
+info: 2021-08-13T12:40:18.919Z Escuchando el puerto 3000
+info: 2021-08-13T12:40:20.226Z Escuchando el puerto 3000
+info: 2021-08-13T12:40:43.318Z Escuchando el puerto 3000
+info: 2021-08-13T12:41:04.609Z Escuchando el puerto 3000
+info: 2021-08-13T12:41:22.659Z Escuchando el puerto 3000
+info: 2021-08-13T12:41:23.824Z Escuchando el puerto 3000
+info: 2021-08-13T12:41:32.932Z Escuchando el puerto 3000
+info: 2021-08-13T12:41:35.819Z Escuchando el puerto 3000
+info: 2021-08-13T12:41:38.977Z Escuchando el puerto 3000
+info: 2021-08-13T12:41:40.984Z Escuchando el puerto 3000
+info: 2021-08-13T12:41:49.022Z Escuchando el puerto 3000
+info: 2021-08-13T12:41:50.110Z Escuchando el puerto 3000
+info: 2021-08-13T12:41:57.324Z Escuchando el puerto 3000
+info: 2021-08-13T12:42:04.956Z Escuchando el puerto 3000
+info: 2021-08-13T12:42:08.288Z Escuchando el puerto 3000
+info: 2021-08-13T12:42:23.601Z Escuchando el puerto 3000
+info: 2021-08-13T12:42:45.077Z Escuchando el puerto 3000
+info: 2021-08-13T12:42:50.637Z Escuchando el puerto 3000
+info: 2021-08-13T12:43:26.542Z Escuchando el puerto 3000
+info: 2021-08-13T12:43:37.256Z Escuchando el puerto 3000
+info: 2021-08-13T12:43:41.291Z Escuchando el puerto 3000
+info: 2021-08-13T12:43:46.406Z Escuchando el puerto 3000
+info: 2021-08-13T12:43:47.305Z Escuchando el puerto 3000
+info: 2021-08-13T12:43:49.710Z Escuchando el puerto 3000
+info: 2021-08-13T12:43:50.800Z Escuchando el puerto 3000
+info: 2021-08-13T12:43:52.264Z Escuchando el puerto 3000
+info: 2021-08-13T12:43:55.231Z Escuchando el puerto 3000
+info: 2021-08-13T12:44:19.859Z Escuchando el puerto 3000
+info: 2021-08-13T12:44:42.180Z Escuchando el puerto 3000
+info: 2021-08-13T12:44:43.129Z Escuchando el puerto 3000
