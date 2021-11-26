@@ -6,6 +6,7 @@ const bcrypt = require('bcrypt')
 const log = require('./../utils/logger')
 const validarUsuario = require('./usuarios.validate').validarUsuario
 const validarPedidoDeLogin = require('./usuarios.validate').validarPedidoDeLogin
+const config = require('../../config')
 
 const usuariosRouter = express.Router()
 
@@ -62,7 +63,7 @@ usuariosRouter.post('/login', validarPedidoDeLogin,(req,res)=> {
     let hashedPassword = usuarios[index].password;
     bcrypt.compare(usuarioNoAutenticado.password, hashedPassword, (err,iguales)=>{
         if (iguales){
-            let token = jwt.sign({id: usuarios[index].id}, 'esto es un secreto',{expiresIn:86400})
+            let token = jwt.sign({id: usuarios[index].id}, config.jwt.secreto,{expiresIn:"20h"})
             log.info(`Usuario ${usuarioNoAutenticado.username} completo autenticacion exitosamente`)
             res.status(200).json({token});
         }else{

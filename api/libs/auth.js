@@ -3,11 +3,12 @@ const log = require('./../resourses/utils/logger')
 const usuarios = require('./../../database').usuarios
 const bcrypt = require('bcrypt')
 const passportJWT = require('passport-jwt')
+const config = require('../config')
 
 //modulo de autenticacion con jwt
 //ve a buscar el token el headear del request
 let jwtOption = {
-    secretOrKey: 'esto es un secreto',
+    secretOrKey: config.jwt.secreto,
     jwtFromRequest: passportJWT.ExtractJwt.fromAuthHeaderAsBearerToken()
 }
 module.exports = new passportJWT.Strategy(jwtOption,(jwtPayload,next) =>{
