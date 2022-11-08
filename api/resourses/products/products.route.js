@@ -1,6 +1,5 @@
 const express = require('express')
 const _ = require('underscore')
-const products = require("./../../../database").products
 const uuidv4 = require('uuid/v4')
 const log = require('./../utils/logger')
 const validarProducto = require('./products.validate').validarProducto
@@ -8,6 +7,8 @@ const passport = require('passport')
 const productosRouter = express.Router()
 const jwtAuthenticate = passport.authenticate('jwt', { session: false })
 const productoController = require('./products.controller')
+const procesarErrores = require('../../libs/errorHandler').procesarErrores
+const {ProductoNoExiste, UsuarioNoEsDueño} = require('./products.error')
 
 function validarId(req,res,next){
     let id = req.params.id
@@ -27,59 +28,40 @@ productosRouter.get("/", (req, res) => {
     })
 })
 //localhost:3000/productos
-productosRouter.post('/', [jwtAuthenticate,validarProducto], (req,res)=>{
-
-    productoController.crearProducto(req.body,req.user.username)
+productosRouter.post('/', [jwtAuthenticate,validarProducto], procesarErrores((req,res)=>{
+   return productoController.crearProducto(req.body,req.user.username)
     .then(producto =>{
         log.info("Producto agregado a la colección productos", producto.toObject())
         res.status(201).json(producto)
-    }).catch(err =>{
-        log.warn('Producto no pudo ser creado',err)
-        res.status(500).send("Error ocurrio al tratar de crear el producto")
     })
-})
+}))
 
-productosRouter.get('/:id',validarId, (req, res) => {
+productosRouter.get('/:id',validarId, procesarErrores((req, res) => {
 
     let id = req.params.id
-    productoController.obtenerProducto(id).then(producto =>{
+    return productoController.obtenerProducto(id).then(producto =>{
         if(!producto){
-            res.status(404).send(`Producto con id [${id}] no existe`)
-        }else{
-            res.json(producto)
+            throw new  ProductoNoExiste(`Producto con id [${id}] no existe`)
         }
-    }).catch(err=>{
-        log.warn(`Excepción ocurrió al tratar de obtener producto con id [${id}]`,err)
-        res.status(500).send(`Error ocurrio obteniendo producto con id [${id}]`)
-
     })
     
-})
+}))
 
-productosRouter.put('/:id', [jwtAuthenticate, validarProducto], async (req, res) => {
+productosRouter.put('/:id', [jwtAuthenticate, validarProducto], procesarErrores(async (req, res) => {
 
     let id = req.params.id
     let requestUsuario = req.user.username
     let productoAReemplazar
-
-
-    try{
-        productoAReemplazar = await productoController.obtenerProducto(id)
-        
-    }catch (err){
-        log.warn(`Excepción ocurrió al procesar la modificación del producto con id [${id}]`)
-        res.status(500).send(`Error ocurrió modificando producto con id [${id}]`)
-        return
-    }
+    
+    productoAReemplazar = await productoController.obtenerProducto(id)
 
     if(!productoAReemplazar){
-        res.status(404).send(`El producto con id [${id}]`)
+        throw new  ProductoNoExiste(`El producto con id [${id}]`)
     }
 
     if(productoAReemplazar.dueño !== requestUsuario){
         log.info(`Usuario ${requestUsuario} no es el dueño del producto con id ${id}. Dueño real es el ${productoAReemplazar.dueño}. Request no será procesado`)
-        res.status(401).send(`No eres dueño del producto con id ${id}. Solo puedes modificar productos creados por ti`)
-        return 
+        throw new  UsuarioNoEsDueño(`No eres dueño del producto con id ${id}. Solo puedes modificar productos creados por ti`)
     }
 
     productoController.reemplazarProducto(id,req.body,requestUsuario)
@@ -87,53 +69,35 @@ productosRouter.put('/:id', [jwtAuthenticate, validarProducto], async (req, res)
             res.json(producto)
             log.info(`Producto con id [${id}] reemplazado con nuevo producto`, producto.toObject())
     })
-    .catch (err =>{
-        log.error(`Excepción al tratar de reemplazar producto con id [${id}]`,err)
-        res.status(500).send(`Error ocurrio al reemplazar el producto con id [${id}]`)
-    })
-
    
-})
+}))
 
-productosRouter.delete('/:id', [jwtAuthenticate, validarId],async (req, res) => {
+productosRouter.delete('/:id', [jwtAuthenticate, validarId],procesarErrores(async (req, res) => {
 
     let id = req.params.id
     let productoAborrar
 
-    try{
-        productoAborrar = await productoController.obtenerProducto(id)
-    }catch (err){
-        log.warn(`Excepción ocurrió al procesar el borrado de producto con id [${id}]`,err)
-        res.status(500).send(`Error ocurrio borrando producto con id [${id}]`)
-        return
-    }
+    productoAborrar = await productoController.obtenerProducto(id)
 
     if (!productoAborrar) {
         log.error(`Producto [${id}] no encontrado. Nada que borrar`)
-        res.status(404).send(`Producto [${id}] no encontrado. Nada que borrar`)
-        return
+        throw new  ProductoNoExiste(`Producto [${id}] no encontrado. Nada que borrar`)
+        
     }
 
     usuarioAutenticado = req.user.username
     if (productoAborrar.dueño !== usuarioAutenticado) {
         log.info(`Usuario ${usuarioAutenticado} no es el dueño del producto con id ${id}. Dueño real es el ${productoAborrar.dueño}. Request no será procesado`)
-        res.status(401).send(`No eres dueño del producto con id ${id}. Solo puedes borrar productos creados por ti`)
-        return
+        throw new  UsuarioNoEsDueño(`No eres dueño del producto con id ${id}. Solo puedes borrar productos creados por ti`)
     }
 
-    try{
-        productoAborrar = await productoController.borrarProducto(id)
-        log.info(`Producto con id [${id}] fue borrado`)
-        res.json(productoAborrar);
-
-    }catch (err){
-        log.error(`Excepción al tratar de borrar producto con id [${id}]`,err)
-        res.status(500).send(`Error ocurrio al borrar el producto con id [${id}]`)
-    }
+    productoAborrar = await productoController.borrarProducto(id)
+    log.info(`Producto con id [${id}] fue borrado`)
+    res.json(productoAborrar);
 
     let borrado = products.splice(indiceABorrar, 1);
     res.json(borrado);
 
-});
+}));
 
 module.exports = productosRouter;

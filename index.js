@@ -7,6 +7,16 @@
 //alias
 
 
+/* brew services stop mongodb
+brew uninstall homebrew/core/mongodb
+
+# Use the migrated distribution from custom tap
+brew tap mongodb/brew
+brew install mongodb-community
+brew services start mongodb-community */
+
+
+// accede a la shell de mongo con el comando mongosh
 const express = require('express')
 const bodyParser = require('body-parser')
 const productosRouter = require('./api/resourses/products/products.route')
@@ -22,6 +32,8 @@ const logger = require("./api/resourses/utils/logger")
 const authJTW = require('./api/libs/auth')
 const config = require('./api/config')
 const passport = require('passport')
+const errorHandler = require('./api/libs/errorHandler')
+
 passport.use(authJTW)
 
 mongoose.connect('mongodb://127.0.0.1:27017/vendetuscosas')
@@ -44,10 +56,21 @@ app.use(passport.initialize())
 
 app.use('/productos',productosRouter)
 app.use('/usuarios',usuariosRouter)
+app.use(errorHandler.procesarErrores)
+
+if(config.ambiente === 'prod'){
+    app.use(errorHandler.erroresEnProduccion)
+}else{
+    app.use(errorHandler.erroresEnDesarrollo)
+}
 
 // app.get('/',passport.authenticate('basic',{session:false}), (req,res)=> {
 //     res.send('API de vendetuscosas.com')
 // })
-app.listen(config.puerto,()=>{
+const server = app.listen(config.puerto,()=>{
     logger.info('Escuchando el puerto 3000')
 });
+
+module.exports = {
+    app,server
+}

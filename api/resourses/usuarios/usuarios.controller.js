@@ -13,7 +13,8 @@ function crearUsuario(usuario,hashedPassword){
 
 function usuarioExiste(username,email){
     return new Promise((resolve,reject) => {
-        Usuario.find().or([{'username': username},{'email':email}]).then(usuarios =>{
+        Usuario.find().or([{'username': username},{'email':email}])
+        .then(usuarios =>{
             resolve(usuarios.length > 0)
         })
         .catch(err =>{
@@ -23,8 +24,19 @@ function usuarioExiste(username,email){
 
 }
 
+function obtenerUsuario({
+    username: username,
+    id: id
+}){
+    if (username) return Usuario.findOne({username:username})
+    if(id) return Usuario.findById(id)
+    throw new Error("Funcion obtener usuario del controller fue llamada sin especificar username o id")
+}
+
+
 module.exports  = {
     obtenerUsuarios,
     usuarioExiste,
-    crearUsuario
+    crearUsuario,
+    obtenerUsuario
 }
