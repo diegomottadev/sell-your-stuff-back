@@ -7,13 +7,21 @@ The objective of this project is to develop a robust, extensible, and secure sim
 This project aims to develop a Node.js and Express API that is robust, extensible, and secure. The API includes the following features:
 
   -Fundamentals of an API
+  
   -Data validation
+  
   -Configuration and use of a logger
+  
   -Basic HTTP authentication
+  
   -JWT authentication
+  
   -Environment management
+  
   -Integration with MongoDB database
+  
   -Error handling in a production system
+  
   -Integration testing
 
 ## Usage
